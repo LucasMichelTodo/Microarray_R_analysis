@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-01-21 mar 16:08 -->
+<!-- 2020-07-09 jue 17:41 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Readme</title>
@@ -256,56 +256,56 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org84d7f7b">1. Introduction</a></li>
-<li><a href="#org1c429f5">2. Script: Modifiable Parts</a>
+<li><a href="#orgcbd306a">1. Introduction</a></li>
+<li><a href="#org0a3e268">2. Script: Modifiable Parts</a>
 <ul>
-<li><a href="#org3397deb">2.1. Set directories</a></li>
-<li><a href="#orgef8bea7">2.2. Describe Data structure</a></li>
-<li><a href="#org1d0f3c9">2.3. Load Raw_Data</a></li>
-<li><a href="#org24bbce0">2.4. Set number of plots</a></li>
+<li><a href="#orgad85d9e">2.1. Set directories</a></li>
+<li><a href="#orgfed7f51">2.2. Describe Data structure</a></li>
+<li><a href="#orgfd83ba8">2.3. Load Raw_Data</a></li>
+<li><a href="#org70a924c">2.4. Set number of plots</a></li>
 </ul>
 </li>
-<li><a href="#orgf05cdc6">3. Script: Data Analysis</a>
+<li><a href="#org503658a">3. Script: Data Analysis</a>
 <ul>
-<li><a href="#org0857213">3.1. Import libraries</a></li>
-<li><a href="#org8ea6815">3.2. Create folders for output</a></li>
-<li><a href="#orgbaff598">3.3. Load Array annotation, Gene-list and Variant Genes.</a></li>
-<li><a href="#org2959ecd">3.4. Create Probe-DF</a></li>
-<li><a href="#org7f40433">3.5. Group Columns</a></li>
-<li><a href="#org28e0dbe">3.6. Remove low expression probes</a></li>
-<li><a href="#org68f104b">3.7. Arrays QC</a>
+<li><a href="#orgaf17600">3.1. Import libraries</a></li>
+<li><a href="#orgaa27b03">3.2. Create folders for output</a></li>
+<li><a href="#orgd20882c">3.3. Load Array annotation, Gene-list and Variant Genes.</a></li>
+<li><a href="#org2ef0925">3.4. Create Probe-DF</a></li>
+<li><a href="#org060d92d">3.5. Group Columns</a></li>
+<li><a href="#orgc32552b">3.6. Remove low expression probes</a></li>
+<li><a href="#orga44a22f">3.7. Arrays QC</a>
 <ul>
-<li><a href="#org86c266a">3.7.1. Array Plots</a></li>
-<li><a href="#orge19be97">3.7.2. MA Plots</a></li>
+<li><a href="#orgd511a83">3.7.1. Array Plots</a></li>
+<li><a href="#org0e2f478">3.7.2. MA Plots</a></li>
 </ul>
 </li>
-<li><a href="#org9aef148">3.8. Eset creation</a>
+<li><a href="#orga42434d">3.8. Eset creation</a>
 <ul>
-<li><a href="#org4d2a6d6">3.8.1. Change to Log2 (Log Ratio cols, originally log10)</a></li>
-<li><a href="#org6468a1c">3.8.2. Change to Log2 (Raw signal Cols, originally unlogged)</a></li>
-<li><a href="#orge4c22e6">3.8.3. Create eSet: xprobe</a></li>
-<li><a href="#org947da69">3.8.4. Rename and Summarize</a></li>
+<li><a href="#org0da8499">3.8.1. Change to Log2 (Log Ratio cols, originally log10)</a></li>
+<li><a href="#org45fe98f">3.8.2. Change to Log2 (Raw signal Cols, originally unlogged)</a></li>
+<li><a href="#org954a70e">3.8.3. Create eSet: xprobe</a></li>
+<li><a href="#org7f8012e">3.8.4. Rename and Summarize</a></li>
 </ul>
 </li>
-<li><a href="#org4896976">3.9. Estimate times</a></li>
-<li><a href="#orgc5f04d5">3.10. Save results in CSVs</a></li>
-<li><a href="#org6f25f27">3.11. Fold Change</a>
+<li><a href="#org195ea61">3.9. Estimate times</a></li>
+<li><a href="#orgf4bec8c">3.10. Save results in CSVs</a></li>
+<li><a href="#orgdd191c6">3.11. Fold Change</a>
 <ul>
-<li><a href="#org7797bfa">3.11.1. Probe Level</a></li>
-<li><a href="#org7959e24">3.11.2. Gene Level</a></li>
+<li><a href="#orge5c9a6d">3.11.1. Probe Level</a></li>
+<li><a href="#org877620b">3.11.2. Gene Level</a></li>
 </ul>
 </li>
-<li><a href="#org06c187c">3.12. Arees</a>
+<li><a href="#orgc8a0c39">3.12. Arees</a>
 <ul>
-<li><a href="#org4abee85">3.12.1. Functions</a></li>
-<li><a href="#orgf6a8af4">3.12.2. Calls: Compute Areas</a></li>
-<li><a href="#org5213d18">3.12.3. Calculate aAFC (average Area Fold-Change)</a></li>
+<li><a href="#org6fb5969">3.12.1. Functions</a></li>
+<li><a href="#orgb1a1d96">3.12.2. Calls: Compute Areas</a></li>
+<li><a href="#orgb4af18c">3.12.3. Calculate aAFC (average Area Fold-Change)</a></li>
 </ul>
 </li>
-<li><a href="#org0132fca">3.13. Plots</a>
+<li><a href="#orga3209a2">3.13. Plots</a>
 <ul>
-<li><a href="#orgfd535fc">3.13.1. PCAs</a></li>
-<li><a href="#orgbc3d988">3.13.2. Expression Plots</a></li>
+<li><a href="#org1b6c3aa">3.13.1. PCA Plots</a></li>
+<li><a href="#org3046dc0">3.13.2. Expression Plots</a></li>
 </ul>
 </li>
 </ul>
@@ -314,8 +314,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org84d7f7b" class="outline-2">
-<h2 id="org84d7f7b"><span class="section-number-2">1</span> Introduction</h2>
+<div id="outline-container-orgcbd306a" class="outline-2">
+<h2 id="orgcbd306a"><span class="section-number-2">1</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 This folder contains everything you need to run a preliminary analysis on your micro-array data.
@@ -343,34 +343,37 @@ To run the analysis you just have to modify <code>microarrray_analysis.R</code> 
 <li>Open RStudio</li>
 <li>Go to <code>File</code> -&gt; <code>Open file</code> and open the script.</li>
 <li>Modify the script (skip this step if you have already done it).</li>
-<li>Go to <code>Code</code> -&gt; <code>Run region</code> -&gt; <code>Run All</code>. You can do the same by pressing <code>ctl+Shift+Enter</code>.</li>
+<li>Optionally (but recomended) go to <code>Edit -&gt; Folding -&gt; Collapse All</code>. You can do the same by pressing <code>Alt+o</code>.</li>
+<li>Go to <code>Code</code> -&gt; <code>Run region</code> -&gt; <code>Run All</code>. You can do the same by pressing <code>Ctl+Shift+Enter</code>.</li>
 <li>A folder with your chosen name will appear on the same directory where you have the script with the results of your analysis.</li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-org1c429f5" class="outline-2">
-<h2 id="org1c429f5"><span class="section-number-2">2</span> Script: Modifiable Parts</h2>
+<div id="outline-container-org0a3e268" class="outline-2">
+<h2 id="org0a3e268"><span class="section-number-2">2</span> Script: Modifiable Parts</h2>
 <div class="outline-text-2" id="text-2">
 <div class="org-src-container">
-<pre class="src src-R">  <span style="color: #5F7F5F;">########################################################################################</span>
-  <span style="color: #5F7F5F;">############################## </span><span style="color: #7F9F7F;">Modify this part ########################################</span>
-  <span style="color: #5F7F5F;">########################################################################################</span>
+<pre class="src src-R"><span style="color: #5F7F5F;">############## </span><span style="color: #7F9F7F;">Experiment Setup: MODIFY THIS PART #######################</span>
+<span style="color: #5F7F5F;">##</span><span style="color: #7F9F7F;">*********************************************************************##</span>
+<span style="color: #5F7F5F;">##</span><span style="color: #7F9F7F;">*********************************************************************##</span>
 </pre>
 </div>
 <p>
 The only part of code that must be modified are the ones depicted here. They correspond to the begining of the script.
 </p>
 </div>
-<div id="outline-container-org3397deb" class="outline-3">
-<h3 id="org3397deb"><span class="section-number-3">2.1</span> Set directories</h3>
+<div id="outline-container-orgad85d9e" class="outline-3">
+<h3 id="orgad85d9e"><span class="section-number-3">2.1</span> Set directories</h3>
 <div class="outline-text-3" id="text-2-1">
 <div class="org-src-container">
-<pre class="src src-R">  datadir <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #CC9393;">"/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/Raw_Data/"</span>
-  outdir <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #CC9393;">"/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/R_results_NewTry"</span>
-  annot <span style="color: #BFEBBF;">&lt;-</span> read.csv(<span style="color: #CC9393;">"/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/Files/array_anotation.csv"</span>,
-                    sep=<span style="color: #CC9393;">"\t"</span>, header = F)
-  infiles <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #CC9393;">"/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/Files/"</span>
+<pre class="src src-R"><span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Set directories</span>
+
+datadir <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #CC9393;">"/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/Raw_Data/"</span>
+outdir <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #CC9393;">"/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/R_results_NewTry"</span>
+annot <span style="color: #BFEBBF;">&lt;-</span> read.csv(<span style="color: #CC9393;">"/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/Files/array_anotation.csv"</span>,
+                  sep=<span style="color: #CC9393;">"\t"</span>, header = F)
+infiles <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #CC9393;">"/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/Files/"</span>
 </pre>
 </div>
 
@@ -383,27 +386,29 @@ The only part of code that must be modified are the ones depicted here. They cor
 </div>
 </div>
 
-<div id="outline-container-orgef8bea7" class="outline-3">
-<h3 id="orgef8bea7"><span class="section-number-3">2.2</span> Describe Data structure</h3>
+<div id="outline-container-orgfed7f51" class="outline-3">
+<h3 id="orgfed7f51"><span class="section-number-3">2.2</span> Describe Data structure</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Example code:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-R">  nsamples <span style="color: #BFEBBF;">&lt;-</span> 9
-  sample_names <span style="color: #BFEBBF;">&lt;-</span> c(<span style="color: #CC9393;">"Ctl_1"</span>,
-                    <span style="color: #CC9393;">"Ctl_2"</span>,
-                    <span style="color: #CC9393;">"Ctl_3"</span>,
-                    <span style="color: #CC9393;">"A_1"</span>,
-                    <span style="color: #CC9393;">"A_2"</span>,
-                    <span style="color: #CC9393;">"A_3"</span>,
-                    <span style="color: #CC9393;">"B_1"</span>,
-                    <span style="color: #CC9393;">"B_2"</span>,
-                    <span style="color: #CC9393;">"B_3"</span>)
+<pre class="src src-R"><span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Describe Data structure ##</span>
 
-  times <span style="color: #BFEBBF;">&lt;-</span> c(1,2,3, 1,2,3, 1,2,3)
-  types <span style="color: #BFEBBF;">&lt;-</span> c(<span style="color: #CC9393;">"ctl"</span>, <span style="color: #CC9393;">"ctl"</span>, <span style="color: #CC9393;">"ctl"</span>, <span style="color: #CC9393;">"treatA"</span>, <span style="color: #CC9393;">"treatA"</span>, <span style="color: #CC9393;">"treatA"</span>, <span style="color: #CC9393;">"treatB"</span>, <span style="color: #CC9393;">"treatB"</span>, <span style="color: #CC9393;">"treatB"</span>)
+nsamples <span style="color: #BFEBBF;">&lt;-</span> 9
+sample_names <span style="color: #BFEBBF;">&lt;-</span> c(<span style="color: #CC9393;">"Ctl_1"</span>,
+                  <span style="color: #CC9393;">"Ctl_2"</span>,
+                  <span style="color: #CC9393;">"Ctl_3"</span>,
+                  <span style="color: #CC9393;">"A_1"</span>,
+                  <span style="color: #CC9393;">"A_2"</span>,
+                  <span style="color: #CC9393;">"A_3"</span>,
+                  <span style="color: #CC9393;">"B_1"</span>,
+                  <span style="color: #CC9393;">"B_2"</span>,
+                  <span style="color: #CC9393;">"B_3"</span>)
+
+times <span style="color: #BFEBBF;">&lt;-</span> c(1,2,3, 1,2,3, 1,2,3)
+types <span style="color: #BFEBBF;">&lt;-</span> c(<span style="color: #CC9393;">"ctl"</span>, <span style="color: #CC9393;">"ctl"</span>, <span style="color: #CC9393;">"ctl"</span>, <span style="color: #CC9393;">"treatA"</span>, <span style="color: #CC9393;">"treatA"</span>, <span style="color: #CC9393;">"treatA"</span>, <span style="color: #CC9393;">"treatB"</span>, <span style="color: #CC9393;">"treatB"</span>, <span style="color: #CC9393;">"treatB"</span>)
 
 </pre>
 </div>
@@ -422,8 +427,8 @@ In this part you have to modify the following variables:
 </ul>
 </div>
 </div>
-<div id="outline-container-org1d0f3c9" class="outline-3">
-<h3 id="org1d0f3c9"><span class="section-number-3">2.3</span> Load Raw_Data</h3>
+<div id="outline-container-orgfd83ba8" class="outline-3">
+<h3 id="orgfd83ba8"><span class="section-number-3">2.3</span> Load Raw_Data</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 In this part of the script we define the computer folder in which we will be working and load the raw array data.
@@ -434,28 +439,30 @@ Example code:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-R">  Ctl_1 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"ctl_tp1.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
-  Ctl_2 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"ctl_tp2.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
-  Ctl_3 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"ctl_tp3.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
+<pre class="src src-R"><span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Load Raw_Data</span>
+
+Ctl_1 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"ctl_tp1.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
+Ctl_2 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"ctl_tp2.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
+Ctl_3 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"ctl_tp3.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
 
 
-  A_1 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"treatA_tp1.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
-  A_2 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"treatA_tp2.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
-  A_3 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"treatA_tp3.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
+A_1 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"treatA_tp1.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
+A_2 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"treatA_tp2.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
+A_3 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"treatA_tp3.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
 
-  B_1 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"treatB_tp1.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
-  B_2 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"treatB_tp2.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
-  B_3 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"treatB_tp3.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
+B_1 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"treatB_tp1.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
+B_2 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"treatB_tp2.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
+B_3 <span style="color: #BFEBBF;">&lt;-</span> read.table(paste0(datadir, <span style="color: #CC9393;">"treatB_tp3.txt"</span>), sep=<span style="color: #CC9393;">"\t"</span>,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>, skip = 9, header = <span style="color: #7CB8BB;">TRUE</span>)
 
-  array_list <span style="color: #BFEBBF;">&lt;-</span> list(Ctl_1,
-                     Ctl_2,
-                     Ctl_3,
-                     A_1,
-                     A_2,
-                     A_3,
-                     B_1,
-                     B_2,
-                     B_3)
+array_list <span style="color: #BFEBBF;">&lt;-</span> list(Ctl_1,
+                   Ctl_2,
+                   Ctl_3,
+                   A_1,
+                   A_2,
+                   A_3,
+                   B_1,
+                   B_2,
+                   B_3)
 
 </pre>
 </div>
@@ -467,15 +474,17 @@ Example code:
 </ul>
 </div>
 </div>
-<div id="outline-container-org24bbce0" class="outline-3">
-<h3 id="org24bbce0"><span class="section-number-3">2.4</span> Set number of plots</h3>
+<div id="outline-container-org70a924c" class="outline-3">
+<h3 id="org70a924c"><span class="section-number-3">2.4</span> Set number of plots</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Example code:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-R">run_all_plots <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #CC9393;">"no"</span>
+<pre class="src src-R"><span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Set number of plots</span>
+
+run_all_plots <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #CC9393;">"no"</span>
 </pre>
 </div>
 
@@ -488,29 +497,85 @@ Thats all! You are now set to run the analysis. Just start an R session, run the
 </p>
 
 <div class="org-src-container">
-<pre class="src src-R">  <span style="color: #5F7F5F;">########################################################################################</span>
-  <span style="color: #5F7F5F;">############################ </span><span style="color: #7F9F7F;">End of modifiable part ####################################</span>
-  <span style="color: #5F7F5F;">########################################################################################</span>
+<pre class="src src-R"><span style="color: #5F7F5F;">##</span><span style="color: #7F9F7F;">*********************************************************************##</span>
+<span style="color: #5F7F5F;">##</span><span style="color: #7F9F7F;">********************* END OF MODIFIABLE PART ************************##</span>
+<span style="color: #5F7F5F;">##</span><span style="color: #7F9F7F;">*********************************************************************##</span>
 </pre>
 </div>
 </div>
 </div>
 </div>
-<div id="outline-container-orgf05cdc6" class="outline-2">
-<h2 id="orgf05cdc6"><span class="section-number-2">3</span> Script: Data Analysis</h2>
+<div id="outline-container-org503658a" class="outline-2">
+<h2 id="org503658a"><span class="section-number-2">3</span> Script: Data Analysis</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 This is the part of the script that runs the analysis. You do not have to modifiy anything from here on, but if you are curious here is the code!
 </p>
 </div>
-<div id="outline-container-org0857213" class="outline-3">
-<h3 id="org0857213"><span class="section-number-3">3.1</span> Import libraries</h3>
+<div id="outline-container-orgaf17600" class="outline-3">
+<h3 id="orgaf17600"><span class="section-number-3">3.1</span> Import libraries</h3>
+<div class="outline-text-3" id="text-3-1">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Import libraries ####</span>
+
+print(<span style="color: #CC9393;">"Importing Libraries..."</span>)
+list.of.packages <span style="color: #BFEBBF;">&lt;-</span> c(<span style="color: #CC9393;">"reshape2"</span>, <span style="color: #CC9393;">"ggfortify"</span>, <span style="color: #CC9393;">"tidyverse"</span>, <span style="color: #CC9393;">"RColorBrewer"</span>, <span style="color: #CC9393;">"sp"</span>)
+new.packages <span style="color: #BFEBBF;">&lt;-</span> list.of.packages[!(list.of.packages <span style="color: #BFEBBF;">%in%</span> installed.packages()[,<span style="color: #CC9393;">"Package"</span>])]
+<span style="color: #F0DFAF; font-weight: bold;">if</span>(length(new.packages)) install.packages(new.packages)
+
+<span style="color: #BFEBBF;">library</span>(reshape2)
+<span style="color: #BFEBBF;">library</span>(ggfortify)
+<span style="color: #BFEBBF;">library</span>(tidyverse)
+<span style="color: #BFEBBF;">library</span>(RColorBrewer)
+<span style="color: #BFEBBF;">library</span>(sp)
+
+<span style="color: #F0DFAF; font-weight: bold;">if</span> (!(<span style="color: #CC9393;">"Biobase"</span> <span style="color: #BFEBBF;">%in%</span> installed.packages()[,<span style="color: #CC9393;">"Package"</span>])){
+  <span style="color: #F0DFAF; font-weight: bold;">if</span> (!requireNamespace(<span style="color: #CC9393;">"BiocManager"</span>, quietly = <span style="color: #7CB8BB;">TRUE</span>))
+    install.packages(<span style="color: #CC9393;">"BiocManager"</span>)
+  BiocManager::install()
+}
+
+<span style="color: #F0DFAF; font-weight: bold;">if</span> (!(<span style="color: #CC9393;">"org.Pf.plasmo.db"</span> <span style="color: #BFEBBF;">%in%</span> installed.packages()[,<span style="color: #CC9393;">"Package"</span>])){
+  <span style="color: #F0DFAF; font-weight: bold;">if</span> (!requireNamespace(<span style="color: #CC9393;">"BiocManager"</span>, quietly = <span style="color: #7CB8BB;">TRUE</span>))
+    install.packages(<span style="color: #CC9393;">"BiocManager"</span>)
+  BiocManager::install(<span style="color: #CC9393;">"org.Pf.plasmo.db"</span>)
+}
+
+<span style="color: #BFEBBF;">library</span>(org.Pf.plasmo.db)
+<span style="color: #BFEBBF;">library</span>(Biobase)
+</pre>
 </div>
-<div id="outline-container-org8ea6815" class="outline-3">
-<h3 id="org8ea6815"><span class="section-number-3">3.2</span> Create folders for output</h3>
 </div>
-<div id="outline-container-orgbaff598" class="outline-3">
-<h3 id="orgbaff598"><span class="section-number-3">3.3</span> Load Array annotation, Gene-list and Variant Genes.</h3>
+</div>
+
+<div id="outline-container-orgaa27b03" class="outline-3">
+<h3 id="orgaa27b03"><span class="section-number-3">3.2</span> Create folders for output</h3>
+<div class="outline-text-3" id="text-3-2">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Create folders for output ####</span>
+
+print(<span style="color: #CC9393;">"Creating folders for Output..."</span>)
+dir.create(paste0(outdir))
+dir.create(paste0(outdir, <span style="color: #CC9393;">"/Plots"</span>))
+dir.create(paste0(outdir, <span style="color: #CC9393;">"/Plots/Array_Plots"</span>))
+dir.create(paste0(outdir, <span style="color: #CC9393;">"/Plots/MA_Plots"</span>))
+dir.create(paste0(outdir, <span style="color: #CC9393;">"/Plots/Time_estim/"</span>))
+dir.create(paste0(outdir, <span style="color: #CC9393;">"/Plots/Ratio"</span>))
+dir.create(paste0(outdir, <span style="color: #CC9393;">"/Plots/Ratio/Gene_Level"</span>))
+dir.create(paste0(outdir, <span style="color: #CC9393;">"/Plots/Ratio/Probe_Level"</span>))
+dir.create(paste0(outdir, <span style="color: #CC9393;">"/Plots/Ratio/Gene_Level"</span>))
+dir.create(paste0(outdir, <span style="color: #CC9393;">"/Plots/Red_Signal"</span>))
+dir.create(paste0(outdir, <span style="color: #CC9393;">"/Plots/Red_Signal/Gene_Level"</span>))
+dir.create(paste0(outdir, <span style="color: #CC9393;">"/Plots/Red_Signal/Probe_Level"</span>))
+figPath <span style="color: #BFEBBF;">&lt;-</span> paste0(outdir, <span style="color: #CC9393;">"/Plots/"</span>)
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd20882c" class="outline-3">
+<h3 id="orgd20882c"><span class="section-number-3">3.3</span> Load Array annotation, Gene-list and Variant Genes.</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 Load <code>array_anotation.csv</code> a table with the array annotation.
@@ -518,105 +583,934 @@ Load <code>gene_list.txt</code> a list of genes present in the array.
 This will be used for calculating the mean intensity in the array
 for excluding low expressed genes.
 </p>
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Load Array annotation, Gene-list and Variant Genes ####</span>
+
+print(<span style="color: #CC9393;">"Loading Array Annotation..."</span>)
+gene_list <span style="color: #BFEBBF;">&lt;-</span> readLines(paste0(infiles, <span style="color: #CC9393;">"gene_list.txt"</span>))
+variant <span style="color: #BFEBBF;">&lt;-</span> read.csv(paste0(infiles, <span style="color: #CC9393;">"Gens_variants_extended.txt"</span>), header = <span style="color: #7CB8BB;">TRUE</span>, sep = <span style="color: #CC9393;">"\t"</span>)
+</pre>
 </div>
 </div>
-<div id="outline-container-org2959ecd" class="outline-3">
-<h3 id="org2959ecd"><span class="section-number-3">3.4</span> Create Probe-DF</h3>
 </div>
-<div id="outline-container-org7f40433" class="outline-3">
-<h3 id="org7f40433"><span class="section-number-3">3.5</span> Group Columns</h3>
+
+<div id="outline-container-org2ef0925" class="outline-3">
+<h3 id="org2ef0925"><span class="section-number-3">3.4</span> Create Probe-DF</h3>
+<div class="outline-text-3" id="text-3-4">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Create Probe-DF ####</span>
+
+print(<span style="color: #CC9393;">"Creating Probe DF..."</span>)
+probe_df <span style="color: #BFEBBF;">&lt;-</span> array_list[[1]][,c(7,11,14,15)]
+
+<span style="color: #93E0E3;">getCols</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(df){
+  <span style="color: #F0DFAF; font-weight: bold;">return</span>(df[,c(11,14,15)])
+}
+
+goodCols <span style="color: #BFEBBF;">&lt;-</span> lapply(array_list[2:nsamples], <span style="color: #F0DFAF; font-weight: bold;">function</span>(x) getCols(x))
+df <span style="color: #BFEBBF;">&lt;-</span> do.call(<span style="color: #CC9393;">"cbind"</span>, goodCols)
+
+probe_df <span style="color: #BFEBBF;">&lt;-</span> cbind(probe_df, df)
+
+probe_df[<span style="color: #CC9393;">"Gene_id"</span>] <span style="color: #BFEBBF;">&lt;-</span> annot$V2
+probe_df[<span style="color: #CC9393;">"name"</span>] <span style="color: #BFEBBF;">&lt;-</span> annot$V4
+probe_df[<span style="color: #CC9393;">"Annot"</span>] <span style="color: #BFEBBF;">&lt;-</span> annot$V5
+
+probe_df[<span style="color: #CC9393;">"Annot"</span>] <span style="color: #BFEBBF;">&lt;-</span> gsub(<span style="color: #CC9393;">"Plasmodium"</span>, <span style="color: #CC9393;">"Pl."</span>, probe_df$Annot)
+probe_df[<span style="color: #CC9393;">"Annot"</span>] <span style="color: #BFEBBF;">&lt;-</span> gsub(<span style="color: #CC9393;">"protein"</span>, <span style="color: #CC9393;">"prot."</span>, probe_df$Annot)
+probe_df[<span style="color: #CC9393;">"Annot"</span>] <span style="color: #BFEBBF;">&lt;-</span> gsub(<span style="color: #CC9393;">"membrane"</span>, <span style="color: #CC9393;">"memb."</span>, probe_df$Annot)
+probe_df[<span style="color: #CC9393;">"Annot"</span>] <span style="color: #BFEBBF;">&lt;-</span> gsub(<span style="color: #CC9393;">"conserved"</span>, <span style="color: #CC9393;">"cvd."</span>, probe_df$Annot)
+probe_df[<span style="color: #CC9393;">"Annot"</span>] <span style="color: #BFEBBF;">&lt;-</span> gsub(<span style="color: #CC9393;">"function"</span>, <span style="color: #CC9393;">"func."</span>, probe_df$Annot)
+probe_df[<span style="color: #CC9393;">"Annot"</span>] <span style="color: #BFEBBF;">&lt;-</span> gsub(<span style="color: #CC9393;">"unknown"</span>, <span style="color: #CC9393;">"ukwn."</span>, probe_df$Annot)
+probe_df[<span style="color: #CC9393;">"Annot"</span>] <span style="color: #BFEBBF;">&lt;-</span> gsub(<span style="color: #CC9393;">"exported"</span>, <span style="color: #CC9393;">"xptd."</span>, probe_df$Annot)
+probe_df[<span style="color: #CC9393;">"Annot"</span>] <span style="color: #BFEBBF;">&lt;-</span> gsub(<span style="color: #CC9393;">"pseudogene"</span>, <span style="color: #CC9393;">"pseudo"</span>, probe_df$Annot)
+probe_df[<span style="color: #CC9393;">"Annot"</span>] <span style="color: #BFEBBF;">&lt;-</span> gsub(<span style="color: #CC9393;">"putative"</span>, <span style="color: #CC9393;">"put."</span>, probe_df$Annot)
+probe_df[<span style="color: #CC9393;">"Annot"</span>] <span style="color: #BFEBBF;">&lt;-</span> gsub(<span style="color: #CC9393;">"%2C"</span>, <span style="color: #CC9393;">""</span>, probe_df$Annot)
+
+                                        <span style="color: #5F7F5F;"># </span><span style="color: #7F9F7F;">Remove probes that map tu multiple genes.</span>
+probe_df <span style="color: #BFEBBF;">&lt;-</span> probe_df[annot$V3 != <span style="color: #CC9393;">"drop"</span> | is.na(annot$V3),]
+
+                                        <span style="color: #5F7F5F;"># </span><span style="color: #7F9F7F;">Add Variant Genes information</span>
+probe_df[<span style="color: #CC9393;">"Variant"</span>] <span style="color: #BFEBBF;">&lt;-</span> probe_df$Gene_id <span style="color: #BFEBBF;">%in%</span> variant$ID
+
+</pre>
 </div>
-<div id="outline-container-org28e0dbe" class="outline-3">
-<h3 id="org28e0dbe"><span class="section-number-3">3.6</span> Remove low expression probes</h3>
 </div>
-<div id="outline-container-org68f104b" class="outline-3">
-<h3 id="org68f104b"><span class="section-number-3">3.7</span> Arrays QC</h3>
+</div>
+
+<div id="outline-container-org060d92d" class="outline-3">
+<h3 id="org060d92d"><span class="section-number-3">3.5</span> Group Columns</h3>
+<div class="outline-text-3" id="text-3-5">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Group Columns ####</span>
+
+signalCols <span style="color: #BFEBBF;">&lt;-</span> nsamples*3+1
+allcols <span style="color: #BFEBBF;">&lt;-</span> dim(probe_df)[2]
+
+ratioCols <span style="color: #BFEBBF;">&lt;-</span> seq(2, signalCols, 3)
+redCols <span style="color: #BFEBBF;">&lt;-</span> seq(4, signalCols, 3)
+greCols <span style="color: #BFEBBF;">&lt;-</span> seq(3, signalCols, 3)
+
+infoCols <span style="color: #BFEBBF;">&lt;-</span> c(1, (signalCols+1):allcols)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc32552b" class="outline-3">
+<h3 id="orgc32552b"><span class="section-number-3">3.6</span> Remove low expression probes</h3>
+<div class="outline-text-3" id="text-3-6">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Remove low expression probes ####</span>
+
+print(<span style="color: #CC9393;">"Removing low expression probes..."</span>)
+medians <span style="color: #BFEBBF;">&lt;-</span> list()
+<span style="color: #F0DFAF; font-weight: bold;">for</span> (i <span style="color: #F0DFAF; font-weight: bold;">in</span> 1:nsamples){
+  redm <span style="color: #BFEBBF;">&lt;-</span> median(sort(probe_df[probe_df$Gene_id <span style="color: #BFEBBF;">%in%</span> gene_list, redCols][,i])[1:100])
+  grenm <span style="color: #BFEBBF;">&lt;-</span> median(sort(probe_df[probe_df$Gene_id <span style="color: #BFEBBF;">%in%</span> gene_list, greCols][,i])[1:100])
+  medians[[i]] <span style="color: #BFEBBF;">&lt;-</span> c(grenm, redm)
+}
+
+passTest <span style="color: #BFEBBF;">&lt;-</span> list()
+<span style="color: #F0DFAF; font-weight: bold;">for</span>(i <span style="color: #F0DFAF; font-weight: bold;">in</span> 1:nsamples){
+  g <span style="color: #BFEBBF;">&lt;-</span> probe_df[,greCols][i] &lt; 3*medians[[i]][1]
+  r <span style="color: #BFEBBF;">&lt;-</span> probe_df[,redCols][i] &lt; 3*medians[[i]][2]
+  all <span style="color: #BFEBBF;">&lt;-</span> g &amp; r
+  passTest[[i]] <span style="color: #BFEBBF;">&lt;-</span> !all
+}
+
+testDF <span style="color: #BFEBBF;">&lt;-</span> as.data.frame(passTest)
+pass <span style="color: #BFEBBF;">&lt;-</span> rowSums(testDF) &gt; 0
+write.csv(table(!pass), paste0(outdir, <span style="color: #CC9393;">"/NA_probes.csv"</span>))
+probe_df[!pass,c(ratioCols)] <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #7CB8BB;">NA</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orga44a22f" class="outline-3">
+<h3 id="orga44a22f"><span class="section-number-3">3.7</span> Arrays QC</h3>
 <div class="outline-text-3" id="text-3-7">
 </div>
-<div id="outline-container-org86c266a" class="outline-4">
-<h4 id="org86c266a"><span class="section-number-4">3.7.1</span> Array Plots</h4>
+<div id="outline-container-orgd511a83" class="outline-4">
+<h4 id="orgd511a83"><span class="section-number-4">3.7.1</span> Array Plots</h4>
+<div class="outline-text-4" id="text-3-7-1">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Array Plots ####</span>
+
+print(<span style="color: #CC9393;">"Plotting Arrays..."</span>)
+cols <span style="color: #BFEBBF;">&lt;-</span> rev(brewer.pal(11, <span style="color: #CC9393;">'Spectral'</span>))
+
+<span style="color: #93E0E3;">arrayPlot</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(df) {
+  df_name <span style="color: #BFEBBF;">&lt;-</span> sample_names[i]
+  p1 <span style="color: #BFEBBF;">&lt;-</span> qplot(Col, Row, data=df, color=log2(rMedianSignal)&lt;7) + scale_color_manual(values=c(<span style="color: #CC9393;">"aliceblue"</span>, <span style="color: #CC9393;">"black"</span>)) + ggtitle(df_name)
+  ggsave(p1, filename = paste0(figPath, <span style="color: #CC9393;">"Array_Plots/sample_"</span>, df_name, <span style="color: #CC9393;">"_boolean.jpeg"</span>), device = <span style="color: #CC9393;">"jpeg"</span>)
+
+  p2 <span style="color: #BFEBBF;">&lt;-</span> qplot(Col, Row, data=df, color=log2(rMedianSignal)) + scale_colour_gradientn(colours = cols) + ggtitle(df_name)
+  ggsave(p2, filename = paste0(figPath, <span style="color: #CC9393;">"Array_Plots/sample_"</span>, df_name, <span style="color: #CC9393;">".jpeg"</span>), device = <span style="color: #CC9393;">"jpeg"</span>)
+
+  p3 <span style="color: #BFEBBF;">&lt;-</span> qplot(Col, Row, data=df, color=is.na(LogRatio)) + scale_color_manual(values=c(<span style="color: #CC9393;">"aliceblue"</span>, <span style="color: #CC9393;">"red"</span>)) + ggtitle(df_name)
+  ggsave(p3, filename = paste0(figPath, <span style="color: #CC9393;">"Array_Plots/sample_"</span>, df_name, <span style="color: #CC9393;">"_NAs.jpeg"</span>), device = <span style="color: #CC9393;">"jpeg"</span>)
+}
+
+<span style="color: #F0DFAF; font-weight: bold;">for</span> (i <span style="color: #F0DFAF; font-weight: bold;">in</span> 1:length(array_list)) {arrayPlot(array_list[[i]])}
+</pre>
 </div>
-<div id="outline-container-orge19be97" class="outline-4">
-<h4 id="orge19be97"><span class="section-number-4">3.7.2</span> MA Plots</h4>
 </div>
 </div>
-<div id="outline-container-org9aef148" class="outline-3">
-<h3 id="org9aef148"><span class="section-number-3">3.8</span> Eset creation</h3>
+
+<div id="outline-container-org0e2f478" class="outline-4">
+<h4 id="org0e2f478"><span class="section-number-4">3.7.2</span> MA Plots</h4>
+<div class="outline-text-4" id="text-3-7-2">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">MA Plots ####</span>
+
+print(<span style="color: #CC9393;">"Plotting MA Plots..."</span>)
+<span style="color: #93E0E3;">myMAplot</span>  <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(mray){
+  df_name <span style="color: #BFEBBF;">&lt;-</span> sample_names[i]
+  m_vals <span style="color: #BFEBBF;">&lt;-</span> log2(mray$gProcessedSignal) - log2(mray$rProcessedSignal)
+  a_vals <span style="color: #BFEBBF;">&lt;-</span> (log2(mray$gProcessedSignal) + log2(mray$rProcessedSignal))/2
+  ma_df <span style="color: #BFEBBF;">&lt;-</span> cbind(a_vals, m_vals)
+  p <span style="color: #BFEBBF;">&lt;-</span> ggplot(ma_df, aes(x=a_vals, y=m_vals))
+  p <span style="color: #BFEBBF;">&lt;-</span> p + geom_point()
+  p <span style="color: #BFEBBF;">&lt;-</span> p + geom_smooth(method = <span style="color: #CC9393;">"lm"</span>, se=F, color= <span style="color: #CC9393;">"red"</span>)
+  p <span style="color: #BFEBBF;">&lt;-</span> p + geom_hline(yintercept=0, color = <span style="color: #CC9393;">"blue"</span>, size = 1)
+  ggsave(p, filename = paste0(figPath, <span style="color: #CC9393;">"MA_Plots/sample_"</span>, df_name, <span style="color: #CC9393;">"_MA.jpeg"</span>), device = <span style="color: #CC9393;">"jpeg"</span>)
+}
+
+<span style="color: #F0DFAF; font-weight: bold;">for</span> (i <span style="color: #F0DFAF; font-weight: bold;">in</span> 1:length(array_list)) {myMAplot(array_list[[i]])}
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga42434d" class="outline-3">
+<h3 id="orga42434d"><span class="section-number-3">3.8</span> Eset creation</h3>
 <div class="outline-text-3" id="text-3-8">
 </div>
-<div id="outline-container-org4d2a6d6" class="outline-4">
-<h4 id="org4d2a6d6"><span class="section-number-4">3.8.1</span> Change to Log2 (Log Ratio cols, originally log10)</h4>
+<div id="outline-container-org0da8499" class="outline-4">
+<h4 id="org0da8499"><span class="section-number-4">3.8.1</span> Change to Log2 (Log Ratio cols, originally log10)</h4>
+<div class="outline-text-4" id="text-3-8-1">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Change to Log2 (Log Ratio cols, originally log10) ####</span>
+
+print(<span style="color: #CC9393;">"Creating Eset..."</span>)
+probe_df[,ratioCols] <span style="color: #BFEBBF;">&lt;-</span> log2(10**probe_df[,ratioCols])
+</pre>
 </div>
-<div id="outline-container-org6468a1c" class="outline-4">
-<h4 id="org6468a1c"><span class="section-number-4">3.8.2</span> Change to Log2 (Raw signal Cols, originally unlogged)</h4>
 </div>
-<div id="outline-container-orge4c22e6" class="outline-4">
-<h4 id="orge4c22e6"><span class="section-number-4">3.8.3</span> Create eSet: xprobe</h4>
 </div>
-<div id="outline-container-org947da69" class="outline-4">
-<h4 id="org947da69"><span class="section-number-4">3.8.4</span> Rename and Summarize</h4>
+
+<div id="outline-container-org45fe98f" class="outline-4">
+<h4 id="org45fe98f"><span class="section-number-4">3.8.2</span> Change to Log2 (Raw signal Cols, originally unlogged)</h4>
+<div class="outline-text-4" id="text-3-8-2">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Change to Log2 (Raw signal Cols, originally unlogged) ####</span>
+
+probe_df[,redCols]  <span style="color: #BFEBBF;">&lt;-</span> log2(probe_df[,redCols])
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org954a70e" class="outline-4">
+<h4 id="org954a70e"><span class="section-number-4">3.8.3</span> Create eSet: xprobe</h4>
+<div class="outline-text-4" id="text-3-8-3">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Create eSet: xprobe ####</span>
+
+exprsx <span style="color: #BFEBBF;">&lt;-</span> as.matrix(probe_df[,ratioCols])
+colnames(exprsx) <span style="color: #BFEBBF;">&lt;-</span> sample_names
+fdata <span style="color: #BFEBBF;">&lt;-</span> new(<span style="color: #CC9393;">"AnnotatedDataFrame"</span>, probe_df[,infoCols])
+teor_time <span style="color: #BFEBBF;">&lt;-</span> times
+type <span style="color: #BFEBBF;">&lt;-</span> types
+pdata <span style="color: #BFEBBF;">&lt;-</span> data.frame(type=type, teor_time=teor_time); rownames(pdata) <span style="color: #BFEBBF;">&lt;-</span> sample_names
+pdata <span style="color: #BFEBBF;">&lt;-</span> new(<span style="color: #CC9393;">"AnnotatedDataFrame"</span>, pdata)
+xprobe <span style="color: #BFEBBF;">&lt;-</span> new(<span style="color: #CC9393;">"ExpressionSet"</span>, exprs=exprsx, featureData=fdata, phenoData=pdata)
+save(xprobe,file=paste0(outdir, <span style="color: #CC9393;">'/probeLevel.RData'</span>))
+
+exprsx <span style="color: #BFEBBF;">&lt;-</span> as.matrix(probe_df[,redCols])
+colnames(exprsx) <span style="color: #BFEBBF;">&lt;-</span> sample_names
+xprobe_red <span style="color: #BFEBBF;">&lt;-</span> new(<span style="color: #CC9393;">"ExpressionSet"</span>, exprs=exprsx, featureData=fdata, phenoData=pdata)
+
+write.csv(cbind(fdata@data, exprs(xprobe)), paste0(outdir, <span style="color: #CC9393;">"/probeLevel_exp.csv"</span>), row.names=F)
+write.csv(cbind(fdata@data, exprs(xprobe_red)), paste0(outdir, <span style="color: #CC9393;">"/probeLevel_redSignalexp.csv"</span>), row.names=F)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7f8012e" class="outline-4">
+<h4 id="org7f8012e"><span class="section-number-4">3.8.4</span> Rename and Summarize</h4>
 <div class="outline-text-4" id="text-3-8-4">
 <p>
 Summarize all probes for a same gene, using median polish.
 Here we are considering the ratio between green and red signal as the expression
 value.
 </p>
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Rename and Summarize ####</span>
+
+<span style="color: #93E0E3;">myRma</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(x) {
+  <span style="color: #F0DFAF; font-weight: bold;">if</span> (class(x)==<span style="color: #CC9393;">'numeric'</span>) {
+    ans <span style="color: #BFEBBF;">&lt;-</span> x
+  } <span style="color: #F0DFAF; font-weight: bold;">else</span> {
+    ans <span style="color: #BFEBBF;">&lt;-</span> medpolish(x,trace.iter=<span style="color: #7CB8BB;">FALSE</span>,na.rm=<span style="color: #7CB8BB;">TRUE</span>)
+    ans <span style="color: #BFEBBF;">&lt;-</span> ans$overall + ans$col
+  }
+  <span style="color: #F0DFAF; font-weight: bold;">return</span>(ans)
+}
+
+<span style="color: #93E0E3;">renameGenesAndSummarize</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(genesToRename.sd,exprsx,geneid,summaryMethod=myRma,type) {
+
+  <span style="color: #F0DFAF; font-weight: bold;">if</span> (type == <span style="color: #CC9393;">"ratio"</span>){
+    xgene <span style="color: #BFEBBF;">&lt;-</span> by(exprsx[,ratioCols],geneid,myRma)
+  } <span style="color: #F0DFAF; font-weight: bold;">else</span> <span style="color: #F0DFAF; font-weight: bold;">if</span> (type == <span style="color: #CC9393;">"red"</span>){
+    xgene <span style="color: #BFEBBF;">&lt;-</span> by(exprsx[,redCols],geneid,myRma)
+  }
+
+  xgene <span style="color: #BFEBBF;">&lt;-</span> do.call(<span style="color: #CC9393;">'rbind'</span>,xgene)
+
+  <span style="color: #93E0E3;">mysd</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(x) { ans <span style="color: #BFEBBF;">&lt;-</span> ifelse(sum(!is.na(x))==1,0,sd(x,na.rm=<span style="color: #7CB8BB;">TRUE</span>)); <span style="color: #F0DFAF; font-weight: bold;">return</span>(ans) }
+  sdgene <span style="color: #BFEBBF;">&lt;-</span> aggregate(exprsx[, ratioCols],by=list(geneid),FUN=mysd)
+
+  names(sdgene)[1] <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #CC9393;">'geneid'</span>
+  xgene <span style="color: #BFEBBF;">&lt;-</span> data.frame(geneid=rownames(xgene),xgene); rownames(xgene) <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #7CB8BB;">NULL</span>
+
+  fdata <span style="color: #BFEBBF;">&lt;-</span> by(exprsx[,(signalCols+1):allcols],geneid,unique)
+
+  genenames <span style="color: #BFEBBF;">&lt;-</span> names(fdata)
+  fdata <span style="color: #BFEBBF;">&lt;-</span> do.call(<span style="color: #CC9393;">'rbind'</span>,fdata)
+
+  fdata <span style="color: #BFEBBF;">&lt;-</span> new(<span style="color: #CC9393;">"AnnotatedDataFrame"</span>, data.frame(fdata))
+  rownames(fdata) <span style="color: #BFEBBF;">&lt;-</span> as.character(xgene$geneid)
+
+  exprsxgene <span style="color: #BFEBBF;">&lt;-</span> as.matrix(xgene[,-1])
+  rownames(exprsxgene) <span style="color: #BFEBBF;">&lt;-</span> as.character(xgene$geneid);
+  colnames(exprsxgene) <span style="color: #BFEBBF;">&lt;-</span> sample_names
+  eset <span style="color: #BFEBBF;">&lt;-</span> new(<span style="color: #CC9393;">"ExpressionSet"</span>,exprs=exprsxgene, featureData=fdata, phenoData=pdata)
+  <span style="color: #F0DFAF; font-weight: bold;">return</span>(list(eset=eset,sdgene=sdgene,fdata=fdata,geneid=geneid))
+}
+
+geneid <span style="color: #BFEBBF;">&lt;-</span> probe_df$Gene_id
+geneid <span style="color: #BFEBBF;">&lt;-</span> as.character(geneid)
+genesToRename.sd <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #7CB8BB;">NA</span>
+
+tmp <span style="color: #BFEBBF;">&lt;-</span> renameGenesAndSummarize(genesToRename.sd=genesToRename.sd,exprsx=probe_df,geneid=geneid,summaryMethod=myRma, type=<span style="color: #CC9393;">"ratio"</span>)
+xgene <span style="color: #BFEBBF;">&lt;-</span> tmp[[<span style="color: #CC9393;">'eset'</span>]]; sdgene <span style="color: #BFEBBF;">&lt;-</span> tmp[[<span style="color: #CC9393;">'sdgene'</span>]]; fdata <span style="color: #BFEBBF;">&lt;-</span> tmp[[<span style="color: #CC9393;">'fdata'</span>]]; geneid <span style="color: #BFEBBF;">&lt;-</span> tmp[[<span style="color: #CC9393;">'geneid'</span>]]
+
+tmp2 <span style="color: #BFEBBF;">&lt;-</span> renameGenesAndSummarize(genesToRename.sd=genesToRename.sd,exprsx=probe_df,geneid=geneid,summaryMethod=myRma, type=<span style="color: #CC9393;">"red"</span>)
+xgene_red <span style="color: #BFEBBF;">&lt;-</span> tmp2[[<span style="color: #CC9393;">'eset'</span>]]; sdgene <span style="color: #BFEBBF;">&lt;-</span> tmp2[[<span style="color: #CC9393;">'sdgene'</span>]]; fdata <span style="color: #BFEBBF;">&lt;-</span> tmp2[[<span style="color: #CC9393;">'fdata'</span>]]; geneid <span style="color: #BFEBBF;">&lt;-</span> tmp2[[<span style="color: #CC9393;">'geneid'</span>]]
+</pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org4896976" class="outline-3">
-<h3 id="org4896976"><span class="section-number-3">3.9</span> Estimate times</h3>
 </div>
-<div id="outline-container-orgc5f04d5" class="outline-3">
-<h3 id="orgc5f04d5"><span class="section-number-3">3.10</span> Save results in CSVs</h3>
+
+<div id="outline-container-org195ea61" class="outline-3">
+<h3 id="org195ea61"><span class="section-number-3">3.9</span> Estimate times</h3>
+<div class="outline-text-3" id="text-3-9">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Estimate times ####</span>
+
+print(<span style="color: #CC9393;">"Estimating times..."</span>)
+bozdechPath <span style="color: #BFEBBF;">&lt;-</span> paste0(infiles, <span style="color: #CC9393;">'bozdech_Hb3_clean2.csv'</span>)
+LemieuxFunctionsPath <span style="color: #BFEBBF;">&lt;-</span> paste0(infiles, <span style="color: #CC9393;">'lemieux_et_al_pipeline_functions.r'</span>)
+
+<span style="color: #93E0E3;">getTimeEstimation</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(x,dataPath,functionsPath,figuresPath,B=100) {
+                                        <span style="color: #5F7F5F;">#  </span><span style="color: #7F9F7F;">x: the expressionSet for which we want to estimate times (our data).</span>
+                                        <span style="color: #5F7F5F;">#  </span><span style="color: #7F9F7F;">dataPath: path to data that will be used to estimate timepoints (from Bozdech et al)</span>
+                                        <span style="color: #5F7F5F;">#  </span><span style="color: #7F9F7F;">functionsPath: path to the script containing the functions from Lemieux's paper.</span>
+                                        <span style="color: #5F7F5F;">#  </span><span style="color: #7F9F7F;">figuresPath: where we want to save the output plots.</span>
+  <span style="color: #BFEBBF;">source</span>(functionsPath)
+                                        <span style="color: #5F7F5F;">#  </span><span style="color: #7F9F7F;">z &lt;- read.csv(dataPath, as.is = T,sep='\t')</span>
+  z <span style="color: #BFEBBF;">&lt;-</span> read.csv(dataPath, as.is = T)
+                                        <span style="color: #5F7F5F;">#  </span><span style="color: #7F9F7F;">colnames(z)[1] &lt;- 'Name'</span>
+                                        <span style="color: #5F7F5F;">#  </span><span style="color: #7F9F7F;">oldTime &lt;- as.numeric(as.character(pData(x)$time))</span>
+  oldTime <span style="color: #BFEBBF;">&lt;-</span> as.numeric(teor_time)
+  x <span style="color: #BFEBBF;">&lt;-</span> exprs(x)
+  x <span style="color: #BFEBBF;">&lt;-</span> data.frame(Name=as.character(rownames(x)),x,stringsAsFactors=<span style="color: #7CB8BB;">FALSE</span>); rownames(x) <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #7CB8BB;">NULL</span>
+  data <span style="color: #BFEBBF;">&lt;-</span> sync_data(x, z)
+  x <span style="color: #BFEBBF;">&lt;-</span> data[[1]]
+  z <span style="color: #BFEBBF;">&lt;-</span> data[[2]]
+  x <span style="color: #BFEBBF;">&lt;-</span> ordinal(x, use.name = T)
+  z <span style="color: #BFEBBF;">&lt;-</span> ordinal(z, use.name = T)
+                                        <span style="color: #5F7F5F;">#  </span><span style="color: #7F9F7F;">z.na &lt;- cbind(z[,1:22], rep(NA, nrow(z)), z[,23:27], rep(NA, nrow(z)), z[,28:56])</span>
+  z.na <span style="color: #BFEBBF;">&lt;-</span> cbind(z[,1:22], rep(<span style="color: #7CB8BB;">NA</span>, nrow(z)), z[,23:27], rep(<span style="color: #7CB8BB;">NA</span>, nrow(z)), z[,28:46])
+  z <span style="color: #BFEBBF;">&lt;-</span> t(apply(z.na, 1, smooth.missing))
+  sigma.epsilon <span style="color: #BFEBBF;">&lt;-</span> 789.9056
+  z.smooth <span style="color: #BFEBBF;">&lt;-</span> smooth.ref(z, method = <span style="color: #CC9393;">"spline"</span>, spar = 0.5)
+  z.smooth.hourly <span style="color: #BFEBBF;">&lt;-</span> z.smooth[,ll.par$hourly]
+                                        <span style="color: #5F7F5F;">#  </span><span style="color: #7F9F7F;">sigma.eta &lt;- mean(sd(z[,11:ncol(z)] - z.smooth.hourly, na.rm = T), na.rm=T)</span>
+  sigma.eta <span style="color: #BFEBBF;">&lt;-</span> mean(sd(z - z.smooth.hourly, na.rm = T), na.rm=T)
+  new.sigma <span style="color: #BFEBBF;">&lt;-</span> sqrt(sigma.eta^2 + sigma.epsilon^2)
+  ll <span style="color: #BFEBBF;">&lt;-</span> compute.ll(x = x, z = z.smooth, sigma = new.sigma, bootstrap = T, B = B, sample.rate = 0.50)
+  myTimes <span style="color: #BFEBBF;">&lt;-</span> mle(ll)
+  png(file.path(figuresPath,<span style="color: #CC9393;">'/Time_estim/defaultPlots1.png'</span>))
+  plot.ll(ll)
+  dev.off()
+  png(file.path(figuresPath,<span style="color: #CC9393;">'/Time_estim/defaultPlots2.png'</span>))
+  plot.mle(ll)
+  dev.off()
+  png(file.path(figuresPath,<span style="color: #CC9393;">'/Time_estim/ownPlots1.png'</span>))
+  plot(density(myTimes),main=<span style="color: #CC9393;">'Estimated times density'</span>)
+  dev.off()
+  png(file.path(figuresPath,<span style="color: #CC9393;">'/Time_estim/ownPlots2.png'</span>))
+  plot(oldTime, as.numeric(myTimes),xlab=<span style="color: #CC9393;">'Old times'</span>,ylab=<span style="color: #CC9393;">'Estimated times'</span>,xlim=c(-5,50),ylim=c(-5,50))
+  abline(0,1,col=2,lwd=2)
+  abline(v=oldTime,lwd=0.5,lty=3)
+  dev.off()
+  <span style="color: #F0DFAF; font-weight: bold;">return</span>(myTimes)
+}
+
+<span style="color: #93E0E3;">ascendingTime</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(x){
+  current <span style="color: #BFEBBF;">&lt;-</span> 0
+  ncycle <span style="color: #BFEBBF;">&lt;-</span> 0
+  <span style="color: #F0DFAF; font-weight: bold;">for</span> (i <span style="color: #F0DFAF; font-weight: bold;">in</span> 1:length(x)){
+    val  <span style="color: #BFEBBF;">&lt;-</span> x[i]+(48*ncycle)
+    <span style="color: #F0DFAF; font-weight: bold;">if</span> (val &lt; current){
+      current <span style="color: #BFEBBF;">&lt;-</span> val
+      val <span style="color: #BFEBBF;">&lt;-</span> val+48
+      ncycle <span style="color: #BFEBBF;">&lt;-</span> ncycle+1
+    }
+    current <span style="color: #BFEBBF;">&lt;-</span> val
+    x[i] <span style="color: #BFEBBF;">&lt;-</span> val
+  }
+  <span style="color: #F0DFAF; font-weight: bold;">return</span>(x)
+}
+
+
+estimatedTimes <span style="color: #BFEBBF;">&lt;-</span> getTimeEstimation(xgene,bozdechPath,LemieuxFunctionsPath,file.path(figPath),B=100)
+estimatedTimes[estimatedTimes &lt; 0] <span style="color: #BFEBBF;">&lt;-</span> 0
+hpi <span style="color: #BFEBBF;">&lt;-</span> estimatedTimes
+
+<span style="color: #F0DFAF; font-weight: bold;">for</span> (type <span style="color: #F0DFAF; font-weight: bold;">in</span> pData(xgene)$type){
+  sel <span style="color: #BFEBBF;">&lt;-</span> pData(xgene)$type == type
+  typetime <span style="color: #BFEBBF;">&lt;-</span> estimatedTimes[sel]
+  time <span style="color: #BFEBBF;">&lt;-</span> ascendingTime(typetime)
+  estimatedTimes[sel] <span style="color: #BFEBBF;">&lt;-</span> time
+}
+
+write.csv(estimatedTimes, paste0(outdir, <span style="color: #CC9393;">"/Estimated_Times.csv"</span>))
+pData(xgene)$time <span style="color: #BFEBBF;">&lt;-</span> estimatedTimes
+pData(xgene_red)$time <span style="color: #BFEBBF;">&lt;-</span> estimatedTimes
+pData(xgene)$hpi <span style="color: #BFEBBF;">&lt;-</span> hpi
+pData(xgene_red)$hpi <span style="color: #BFEBBF;">&lt;-</span> hpi
+
+                                        <span style="color: #5F7F5F;"># </span><span style="color: #7F9F7F;">Save ExpressionSet at gene level</span>
+save(xgene,file=paste0(outdir, <span style="color: #CC9393;">'/geneLevel.RData'</span>))
+save(xgene_red,file=paste0(outdir, <span style="color: #CC9393;">'/geneLevel_redSignal.RData'</span>))
+
+                                        <span style="color: #5F7F5F;"># </span><span style="color: #7F9F7F;">Boxplot after summarization</span>
+pdf(file.path(figPath,<span style="color: #CC9393;">'boxplot_afterSummarization.pdf'</span>))
+boxplot(exprs(xgene),main=<span style="color: #CC9393;">'summarization method: median poslish'</span>)
+dev.off()
+</pre>
 </div>
-<div id="outline-container-org6f25f27" class="outline-3">
-<h3 id="org6f25f27"><span class="section-number-3">3.11</span> Fold Change</h3>
+</div>
+</div>
+
+<div id="outline-container-orgf4bec8c" class="outline-3">
+<h3 id="orgf4bec8c"><span class="section-number-3">3.10</span> Save results in CSVs</h3>
+<div class="outline-text-3" id="text-3-10">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Save results in CSVs ####</span>
+
+write.csv(xgene@phenoData@data, file = paste0(outdir, <span style="color: #CC9393;">"/experiment_data.csv"</span>))
+write.csv(cbind(xgene@featureData@data, exprs(xgene)), paste0(outdir, <span style="color: #CC9393;">"/geneLevel_exp.csv"</span>), row.names=F)
+write.csv(cbind(xgene_red@featureData@data, exprs(xgene_red)), paste0(outdir, <span style="color: #CC9393;">"/geneLevel_redSignal_exp.csv"</span>), row.names=F)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdd191c6" class="outline-3">
+<h3 id="orgdd191c6"><span class="section-number-3">3.11</span> Fold Change</h3>
 <div class="outline-text-3" id="text-3-11">
 </div>
-<div id="outline-container-org7797bfa" class="outline-4">
-<h4 id="org7797bfa"><span class="section-number-4">3.11.1</span> Probe Level</h4>
+<div id="outline-container-orge5c9a6d" class="outline-4">
+<h4 id="orge5c9a6d"><span class="section-number-4">3.11.1</span> Probe Level</h4>
+<div class="outline-text-4" id="text-3-11-1">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">FC: Probe Level ####</span>
+
+print(<span style="color: #CC9393;">"Calculating Fold-Changes..."</span>)
+<span style="color: #93E0E3;">filter</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(x,y) {x==y}
+combs <span style="color: #BFEBBF;">&lt;-</span> cross2(sample_names, sample_names, .filter = filter)
+
+fc <span style="color: #BFEBBF;">&lt;-</span> list()
+<span style="color: #F0DFAF; font-weight: bold;">for</span> (i <span style="color: #F0DFAF; font-weight: bold;">in</span> combs) {
+  fc[[paste0(i[[1]], <span style="color: #CC9393;">"_"</span>,  i[[2]])]] <span style="color: #BFEBBF;">&lt;-</span> exprs(xprobe)[,i[[1]]] - exprs(xprobe)[,i[[2]]]
+}
+
+probe_fc <span style="color: #BFEBBF;">&lt;-</span> as.data.frame(fc)
+probe_fc <span style="color: #BFEBBF;">&lt;-</span> cbind(fData(xprobe), probe_fc)
+
+write.csv(probe_fc, file = paste0(outdir, <span style="color: #CC9393;">"/proveLevel_FC.csv"</span>), row.names = F)
+</pre>
 </div>
-<div id="outline-container-org7959e24" class="outline-4">
-<h4 id="org7959e24"><span class="section-number-4">3.11.2</span> Gene Level</h4>
 </div>
 </div>
-<div id="outline-container-org06c187c" class="outline-3">
-<h3 id="org06c187c"><span class="section-number-3">3.12</span> Arees</h3>
+
+<div id="outline-container-org877620b" class="outline-4">
+<h4 id="org877620b"><span class="section-number-4">3.11.2</span> Gene Level</h4>
+<div class="outline-text-4" id="text-3-11-2">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">FC: Gene Level ####</span>
+
+<span style="color: #93E0E3;">filter</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(x,y) {x==y}
+combs <span style="color: #BFEBBF;">&lt;-</span> cross2(sample_names, sample_names, .filter = filter)
+
+fc <span style="color: #BFEBBF;">&lt;-</span> list()
+<span style="color: #F0DFAF; font-weight: bold;">for</span> (i <span style="color: #F0DFAF; font-weight: bold;">in</span> combs) {
+  fc[[paste0(i[[1]], <span style="color: #CC9393;">"_"</span>,  i[[2]])]] <span style="color: #BFEBBF;">&lt;-</span> exprs(xgene)[,i[[1]]] - exprs(xgene)[,i[[2]]]
+}
+
+gene_fc <span style="color: #BFEBBF;">&lt;-</span> as.data.frame(fc)
+gene_fc <span style="color: #BFEBBF;">&lt;-</span> cbind(fData(xgene), gene_fc)
+
+write.csv(gene_fc, file = paste0(outdir, <span style="color: #CC9393;">"/geneLevel_FC.csv"</span>), row.names = F)
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc8a0c39" class="outline-3">
+<h3 id="orgc8a0c39"><span class="section-number-3">3.12</span> Arees</h3>
 <div class="outline-text-3" id="text-3-12">
 </div>
-<div id="outline-container-org4abee85" class="outline-4">
-<h4 id="org4abee85"><span class="section-number-4">3.12.1</span> Functions</h4>
+<div id="outline-container-org6fb5969" class="outline-4">
+<h4 id="org6fb5969"><span class="section-number-4">3.12.1</span> Functions</h4>
+<div class="outline-text-4" id="text-3-12-1">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Areas: Functions ####</span>
+
+<span style="color: #93E0E3;">imputePoint</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(xs, ys, tp){
+
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">"xs" and "ys" must be two vectors of equal length</span>
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">with the corresponding y(expression) and x(timepoint)</span>
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">values that form the expression plot of interest (one gene).</span>
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">"tp" must be the timepoint to impute.</span>
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">If the timepoint to be imputed is already present, leave it as is.</span>
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Returns NA if missing the previous or next tp</span>
+
+  <span style="color: #F0DFAF; font-weight: bold;">if</span> (tp <span style="color: #BFEBBF;">%in%</span> xs){
+
+    idx <span style="color: #BFEBBF;">&lt;-</span> which(xs == tp)
+    imputed <span style="color: #BFEBBF;">&lt;-</span> list(x=xs[idx], y=ys[idx])
+
+  } <span style="color: #F0DFAF; font-weight: bold;">else</span> {
+
+    before <span style="color: #BFEBBF;">&lt;-</span> which(xs == max(xs[xs &lt; tp]))
+    after <span style="color: #BFEBBF;">&lt;-</span> which(xs == min(xs[xs &gt; tp]))
+
+    <span style="color: #F0DFAF; font-weight: bold;">if</span> (is.na(ys[before]) | is.na(ys[after])){
+
+      imputed <span style="color: #BFEBBF;">&lt;-</span> list(x=tp, y=<span style="color: #7CB8BB;">NA</span>)
+
+    } <span style="color: #F0DFAF; font-weight: bold;">else</span> {
+
+      x <span style="color: #BFEBBF;">&lt;-</span> c(xs[c(before, after)])
+      y <span style="color: #BFEBBF;">&lt;-</span> c(ys[c(before, after)])
+
+      imputed <span style="color: #BFEBBF;">&lt;-</span> approx(x, y, xout=tp)
+    }
+  }
+  <span style="color: #F0DFAF; font-weight: bold;">return</span>(imputed)
+}
+
+<span style="color: #93E0E3;">computeArea</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(eset){
+
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Takes an eset and computes areas.</span>
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">pData(eset) must contain a field named "time" with the time-points.</span>
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">pData(eset) must have a field named "type" with the grouping variable.</span>
+
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Set needed variables</span>
+  types <span style="color: #BFEBBF;">&lt;-</span> unique(phenoData(eset)$type)
+  type <span style="color: #BFEBBF;">&lt;-</span> phenoData(eset)$type
+  times <span style="color: #BFEBBF;">&lt;-</span> phenoData(eset)$time
+
+  maxminTP <span style="color: #BFEBBF;">&lt;-</span> max(sapply(types,<span style="color: #F0DFAF; font-weight: bold;">function</span>(x) min(times[type==x])))
+  minmaxTP <span style="color: #BFEBBF;">&lt;-</span> min(sapply(types,<span style="color: #F0DFAF; font-weight: bold;">function</span>(x) max(times[type==x])))
+  mybreaks <span style="color: #BFEBBF;">&lt;-</span> seq(maxminTP, minmaxTP, length.out=5)
+  tp1 <span style="color: #BFEBBF;">&lt;-</span> mybreaks[2]
+  tp2 <span style="color: #BFEBBF;">&lt;-</span> mybreaks[3]
+  tp3 <span style="color: #BFEBBF;">&lt;-</span> mybreaks[4]
+
+  xsList <span style="color: #BFEBBF;">&lt;-</span> c()
+  <span style="color: #F0DFAF; font-weight: bold;">for</span> (type <span style="color: #F0DFAF; font-weight: bold;">in</span> types){
+    xsList <span style="color: #BFEBBF;">&lt;-</span> c(xsList, list(pData(eset)$time[phenoData(eset)$type == type]))
+  }
+
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Main loop</span>
+  all_areas <span style="color: #BFEBBF;">&lt;-</span> c()
+  <span style="color: #F0DFAF; font-weight: bold;">for</span> (i <span style="color: #F0DFAF; font-weight: bold;">in</span> 1:dim(eset)[1]){
+
+    gene <span style="color: #BFEBBF;">&lt;-</span> fData(eset)$geneID[i]
+
+    ysList <span style="color: #BFEBBF;">&lt;-</span> c()
+    <span style="color: #F0DFAF; font-weight: bold;">for</span> (type <span style="color: #F0DFAF; font-weight: bold;">in</span> types){
+      ysList <span style="color: #BFEBBF;">&lt;-</span> c(ysList, list(exprs(eset)[i, phenoData(eset)$type == type]))
+    }
+
+    <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Estimate points where needed</span>
+    dfs <span style="color: #BFEBBF;">&lt;-</span> list()
+    <span style="color: #F0DFAF; font-weight: bold;">for</span> (i <span style="color: #F0DFAF; font-weight: bold;">in</span> 1:length(xsList)){
+
+      x <span style="color: #BFEBBF;">&lt;-</span> unlist(xsList[[i]])
+      y <span style="color: #BFEBBF;">&lt;-</span> unlist(ysList[[i]])
+
+      points <span style="color: #BFEBBF;">&lt;-</span> as.data.frame(cbind(x, y))
+      midpoints <span style="color: #BFEBBF;">&lt;-</span> points[points$x &gt; maxminTP &amp;
+                          points$x &lt; minmaxTP, ]
+
+      first <span style="color: #BFEBBF;">&lt;-</span> imputePoint(x, y, maxminTP)
+      last <span style="color: #BFEBBF;">&lt;-</span> imputePoint(x, y, minmaxTP)
+      p1 <span style="color: #BFEBBF;">&lt;-</span> imputePoint(x, y, tp1)
+      p2 <span style="color: #BFEBBF;">&lt;-</span> imputePoint(x, y, tp2)
+      p3 <span style="color: #BFEBBF;">&lt;-</span> imputePoint(x, y, tp3)
+
+      impPoints <span style="color: #BFEBBF;">&lt;-</span> rbind(first, last, p1, p2, p3)
+      allpoints <span style="color: #BFEBBF;">&lt;-</span> rbind(midpoints, impPoints)
+      allpoints$x <span style="color: #BFEBBF;">&lt;-</span> as.numeric(allpoints$x)
+      allpoints$y <span style="color: #BFEBBF;">&lt;-</span> as.numeric(allpoints$y)
+
+      ordered <span style="color: #BFEBBF;">&lt;-</span> arrange(allpoints, allpoints$x)
+
+      dfs[[i]] <span style="color: #BFEBBF;">&lt;-</span> ordered
+    }
+
+    <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Calculate minY on estimated DFs</span>
+    minY <span style="color: #BFEBBF;">&lt;-</span> min(sapply(dfs, <span style="color: #F0DFAF; font-weight: bold;">function</span>(df) min(df$y, na.rm = T)))
+
+    rowareas <span style="color: #BFEBBF;">&lt;-</span> c()
+    <span style="color: #F0DFAF; font-weight: bold;">for</span> (df <span style="color: #F0DFAF; font-weight: bold;">in</span> dfs){
+
+      df$y <span style="color: #BFEBBF;">&lt;-</span> df$y - minY
+
+      <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Whole polygon from expression data</span>
+      polDF <span style="color: #BFEBBF;">&lt;-</span> rbind(df,
+                     c(minmaxTP, 0),
+                     c(maxminTP, 0),
+                     c(df[1,]))
+
+      <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Create Polygons</span>
+      leftHalf <span style="color: #BFEBBF;">&lt;-</span> rbind(df[which(df$x &lt;= tp2),],
+                        c(tp2, 0),
+                        c(maxminTP, 0),
+                        c(df[1,]))
+
+      rightHalf <span style="color: #BFEBBF;">&lt;-</span> rbind(df[which(df$x &gt;= tp2),],
+                         c(minmaxTP, 0),
+                         c(tp2, 0),
+                         c(df[df$x == tp2,]))
+
+      mid <span style="color: #BFEBBF;">&lt;-</span> rbind(df[which(df$x &gt;= tp1 &amp; df$x &lt;= tp3),],
+                   c(tp3, 0),
+                   c(tp1, 0),
+                   c(df[df$x == tp1,]))
+
+      sides <span style="color: #BFEBBF;">&lt;-</span> rbind(df[which(df$x &lt;= tp1),],
+                     c(tp1, 0),
+                     c(tp3, 0),
+                     df[which(df$x &gt;= tp3),],
+                     c(minmaxTP, 0),
+                     c(maxminTP, 0),
+                     df[1,])
+
+      pols <span style="color: #BFEBBF;">&lt;-</span> list(leftHalf, rightHalf, mid, sides)
+
+      <span style="color: #93E0E3;">calcArea</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(x) {ifelse(any(is.na(x)), <span style="color: #7CB8BB;">NA</span>, Polygon(x)@area)}
+      areas <span style="color: #BFEBBF;">&lt;-</span> unlist(lapply(pols, <span style="color: #F0DFAF; font-weight: bold;">function</span>(x) calcArea(x)))
+
+      rowareas <span style="color: #BFEBBF;">&lt;-</span> c(rowareas, areas)
+
+      <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Plot polygons (for debugging purposes)</span>
+      <span style="color: #5F7F5F;">##</span><span style="color: #7F9F7F;">pol &lt;- Polygon(polDF)</span>
+      <span style="color: #5F7F5F;">##</span><span style="color: #7F9F7F;">ps = Polygons(list(pol),1)</span>
+      <span style="color: #5F7F5F;">##</span><span style="color: #7F9F7F;">sps = SpatialPolygons(list(ps))</span>
+      <span style="color: #5F7F5F;">##</span><span style="color: #7F9F7F;">plot(sps)</span>
+    }
+    all_areas <span style="color: #BFEBBF;">&lt;-</span> c(all_areas, list(rowareas))
+  }
+
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Set row and col names for output</span>
+  areaDF <span style="color: #BFEBBF;">&lt;-</span> do.call(rbind, all_areas)
+  titles <span style="color: #BFEBBF;">&lt;-</span> c(<span style="color: #CC9393;">"Left"</span>, <span style="color: #CC9393;">"Right"</span>, <span style="color: #CC9393;">"Middle"</span>, <span style="color: #CC9393;">"Sides"</span>)
+
+  cols <span style="color: #BFEBBF;">&lt;-</span> c()
+  <span style="color: #F0DFAF; font-weight: bold;">for</span> (i <span style="color: #F0DFAF; font-weight: bold;">in</span> types){
+    <span style="color: #F0DFAF; font-weight: bold;">for</span> (t <span style="color: #F0DFAF; font-weight: bold;">in</span> titles){
+      name <span style="color: #BFEBBF;">&lt;-</span> paste0(i, <span style="color: #CC9393;">"_"</span>, t)
+      cols <span style="color: #BFEBBF;">&lt;-</span> c(cols, name)
+    }
+  }
+  colnames(areaDF)  <span style="color: #BFEBBF;">&lt;-</span> cols
+  rownames(areaDF) <span style="color: #BFEBBF;">&lt;-</span> rownames(exprs(eset))
+  <span style="color: #F0DFAF; font-weight: bold;">return</span>(areaDF)
+}
+
+</pre>
 </div>
-<div id="outline-container-orgf6a8af4" class="outline-4">
-<h4 id="orgf6a8af4"><span class="section-number-4">3.12.2</span> Calls: Compute Areas</h4>
 </div>
-<div id="outline-container-org5213d18" class="outline-4">
-<h4 id="org5213d18"><span class="section-number-4">3.12.3</span> Calculate aAFC (average Area Fold-Change)</h4>
+</div>
+<div id="outline-container-orgb1a1d96" class="outline-4">
+<h4 id="orgb1a1d96"><span class="section-number-4">3.12.2</span> Calls: Compute Areas</h4>
+<div class="outline-text-4" id="text-3-12-2">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Calls: Compute Areas ####</span>
+
+print(<span style="color: #CC9393;">"Computing Areas..."</span>)
+areasDF <span style="color: #BFEBBF;">&lt;-</span> computeArea(xgene)
+xout <span style="color: #BFEBBF;">&lt;-</span> cbind(fData(xgene), areasDF)
+
+write.csv(xout, paste0(outdir, <span style="color: #CC9393;">"/area_geneLevel.csv"</span>), row.names=F)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb4af18c" class="outline-4">
+<h4 id="orgb4af18c"><span class="section-number-4">3.12.3</span> Calculate aAFC (average Area Fold-Change)</h4>
 <div class="outline-text-4" id="text-3-12-3">
 </div>
 <ol class="org-ol">
-<li><a id="org48671d3"></a>Custom Max<br /></li>
-<li><a id="orgf8ef146"></a>Calculate Differences and Max<br /></li>
-<li><a id="org7ebf073"></a>Convert Partitions into life stages<br />
+<li><a id="org0447ec7"></a>Custom Max<br />
+<div class="outline-text-5" id="text-3-12-3-1">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Calculate aAFC (average Area Fold-Change) ####</span>
+
+<span style="color: #93E0E3;">myMax</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(x){
+  y <span style="color: #BFEBBF;">&lt;-</span> abs(x)
+  <span style="color: #F0DFAF; font-weight: bold;">if</span> (all(is.na(y))){
+    <span style="color: #F0DFAF; font-weight: bold;">return</span>(list(<span style="color: #7CB8BB;">NA</span>, <span style="color: #7CB8BB;">NA</span>))
+  } <span style="color: #F0DFAF; font-weight: bold;">else</span> {
+    pos <span style="color: #BFEBBF;">&lt;-</span> which.max(y)
+    times <span style="color: #BFEBBF;">&lt;-</span> c(<span style="color: #CC9393;">"Left"</span>, <span style="color: #CC9393;">"Right"</span>, <span style="color: #CC9393;">"Mid"</span>, <span style="color: #CC9393;">"Sides"</span>)
+    <span style="color: #F0DFAF; font-weight: bold;">return</span>(list(maxVal = x[pos],
+                maxTime = times[pos]))
+  }
+}
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org9cfdd64"></a>Calculate Differences and Max<br />
+<div class="outline-text-5" id="text-3-12-3-2">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Get number of categories.</span>
+n <span style="color: #BFEBBF;">&lt;-</span> length(levels(pData(xgene)$type))
+
+ns <span style="color: #BFEBBF;">&lt;-</span> list()
+i <span style="color: #BFEBBF;">&lt;-</span> 1
+<span style="color: #F0DFAF; font-weight: bold;">while</span> (i &lt; n+1){
+  ns[[i]] <span style="color: #BFEBBF;">&lt;-</span> 1:4+(4*(i-1))
+  i <span style="color: #BFEBBF;">&lt;-</span> i+1
+}
+
+<span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Convert de areasDF into a list of DFs separated by types.</span>
+areas <span style="color: #BFEBBF;">&lt;-</span> list()
+<span style="color: #F0DFAF; font-weight: bold;">for</span> (i <span style="color: #F0DFAF; font-weight: bold;">in</span> 1:length(ns)) {
+  areas[[i]] <span style="color: #BFEBBF;">&lt;-</span> areasDF[,ns[[i]]]
+}
+
+
+<span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Calculate area differences</span>
+
+types <span style="color: #BFEBBF;">&lt;-</span> unique(phenoData(xgene)$type)
+type <span style="color: #BFEBBF;">&lt;-</span> phenoData(xgene)$type
+times <span style="color: #BFEBBF;">&lt;-</span> phenoData(xgene)$time
+
+maxminTP <span style="color: #BFEBBF;">&lt;-</span> max(sapply(types,<span style="color: #F0DFAF; font-weight: bold;">function</span>(x) min(times[type==x])))
+minmaxTP <span style="color: #BFEBBF;">&lt;-</span> min(sapply(types,<span style="color: #F0DFAF; font-weight: bold;">function</span>(x) max(times[type==x])))
+mybreaks <span style="color: #BFEBBF;">&lt;-</span> seq(maxminTP, minmaxTP, length.out=5)
+
+sets <span style="color: #BFEBBF;">&lt;-</span> 1:length(areas)
+combs <span style="color: #BFEBBF;">&lt;-</span> combn(sets, 2)
+span <span style="color: #BFEBBF;">&lt;-</span> mybreaks[3] - mybreaks[1]
+titles <span style="color: #BFEBBF;">&lt;-</span> c(<span style="color: #CC9393;">"Left"</span>, <span style="color: #CC9393;">"Right"</span>, <span style="color: #CC9393;">"Middle"</span>, <span style="color: #CC9393;">"Sides"</span>)
+
+
+areaDifs <span style="color: #BFEBBF;">&lt;-</span> list()
+<span style="color: #F0DFAF; font-weight: bold;">for</span> (i <span style="color: #F0DFAF; font-weight: bold;">in</span> 1:dim(combs)[2]){
+
+  one <span style="color: #BFEBBF;">&lt;-</span> combs[1,i]
+  two <span style="color: #BFEBBF;">&lt;-</span> combs[2,i]
+
+  dif1 <span style="color: #BFEBBF;">&lt;-</span> as.data.frame((areas[[one]] - areas[[two]])/span)
+  names  <span style="color: #BFEBBF;">&lt;-</span> paste0(colnames(areas[[one]]),
+                   <span style="color: #CC9393;">"_minus_"</span>,
+                   colnames(areas[[two]]))
+
+  prefix <span style="color: #BFEBBF;">&lt;-</span> paste0(strsplit(colnames(areas[[one]])[1], <span style="color: #CC9393;">"_"</span>)[[1]][1],
+                   <span style="color: #CC9393;">"-"</span>,
+                   strsplit(colnames(areas[[two]])[1], <span style="color: #CC9393;">"_"</span>)[[1]][1])
+  names <span style="color: #BFEBBF;">&lt;-</span> sapply(titles, <span style="color: #F0DFAF; font-weight: bold;">function</span>(x) paste(prefix, x, sep = <span style="color: #CC9393;">"_"</span>))
+
+  colnames(dif1) <span style="color: #BFEBBF;">&lt;-</span> names
+
+  maxval <span style="color: #BFEBBF;">&lt;-</span> apply(dif1, 1, <span style="color: #F0DFAF; font-weight: bold;">function</span>(x) myMax(x)[[1]])
+  maxtime <span style="color: #BFEBBF;">&lt;-</span> apply(dif1, 1, <span style="color: #F0DFAF; font-weight: bold;">function</span>(x) myMax(x)[[2]])
+
+  mv <span style="color: #BFEBBF;">&lt;-</span> paste0(prefix, <span style="color: #CC9393;">"_MaxVal"</span>)
+  mt <span style="color: #BFEBBF;">&lt;-</span> paste0(prefix, <span style="color: #CC9393;">"_MaxTime"</span>)
+
+  dif1[mv] <span style="color: #BFEBBF;">&lt;-</span> maxval
+  dif1[mt] <span style="color: #BFEBBF;">&lt;-</span> maxtime
+
+                                        <span style="color: #5F7F5F;">#</span><span style="color: #7F9F7F;">dif2 &lt;- -dif1</span>
+
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">prefix &lt;- paste0(strsplit(colnames(areas[[two]])[1], "_")[[1]][1],</span>
+  <span style="color: #5F7F5F;">##                  </span><span style="color: #7F9F7F;">"-",</span>
+  <span style="color: #5F7F5F;">##                  </span><span style="color: #7F9F7F;">strsplit(colnames(areas[[one]])[1], "_")[[1]][1])</span>
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">names &lt;- sapply(titles, function(x) paste(prefix, x, sep = "_"))</span>
+
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">colnames(dif2) &lt;- names</span>
+
+  areaDifs <span style="color: #BFEBBF;">&lt;-</span> c(areaDifs, list(dif1))<span style="color: #5F7F5F;">#</span><span style="color: #7F9F7F;">, list(dif2))</span>
+}
+
+allDifs <span style="color: #BFEBBF;">&lt;-</span> do.call(cbind, areaDifs)
+head(allDifs)
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org2ed91ba"></a>Convert Partitions into life stages<br />
 <div class="outline-text-5" id="text-3-12-3-3">
 <p>
 We consider the the timepoint in the middle of a partition (left,right,mid,sides) as it's timepoint.
 </p>
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Areas: Convert Partitions into life stages ####</span>
+
+<span style="color: #93E0E3;">timetostage</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(tp){
+  <span style="color: #F0DFAF; font-weight: bold;">while</span>(tp &gt; 48){
+    tp = tp-48
+  }
+  <span style="color: #F0DFAF; font-weight: bold;">return</span>(tp)
+}
+
+<span style="color: #93E0E3;">getStage</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(tp) {
+  <span style="color: #F0DFAF; font-weight: bold;">if</span> ((tp &gt;= 0) &amp; (tp &lt; 26)) {stg = <span style="color: #CC9393;">"ring"</span>}
+  <span style="color: #F0DFAF; font-weight: bold;">else</span> <span style="color: #F0DFAF; font-weight: bold;">if</span> ((tp &gt;= 26) &amp; (tp &lt; 38)) {stg = <span style="color: #CC9393;">"troph"</span>}
+  <span style="color: #F0DFAF; font-weight: bold;">else</span> <span style="color: #F0DFAF; font-weight: bold;">if</span> ((tp &gt;= 38) &amp; (tp &lt;= 48)) {stg = <span style="color: #CC9393;">"schizont"</span>}
+  <span style="color: #F0DFAF; font-weight: bold;">return</span>(stg)
+}
+
+<span style="color: #93E0E3;">fracToStage</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(frac, tps){
+  <span style="color: #F0DFAF; font-weight: bold;">if</span> (is.na(frac)){
+    <span style="color: #F0DFAF; font-weight: bold;">return</span>(<span style="color: #7CB8BB;">NA</span>)
+  } <span style="color: #F0DFAF; font-weight: bold;">else</span> <span style="color: #F0DFAF; font-weight: bold;">if</span> (frac == <span style="color: #CC9393;">"Left"</span>){
+    tp = tps[2]
+    getStage(tp)
+  } <span style="color: #F0DFAF; font-weight: bold;">else</span> <span style="color: #F0DFAF; font-weight: bold;">if</span> (frac == <span style="color: #CC9393;">"Right"</span>){
+    tp = tps[4]
+    getStage(tp)
+  } <span style="color: #F0DFAF; font-weight: bold;">else</span> <span style="color: #F0DFAF; font-weight: bold;">if</span> (frac == <span style="color: #CC9393;">"Mid"</span>){
+    tp = tps[3]
+    getStage(tp)
+  } <span style="color: #F0DFAF; font-weight: bold;">else</span> <span style="color: #F0DFAF; font-weight: bold;">if</span> (frac == <span style="color: #CC9393;">"Sides"</span>){
+    tp1 = tps[1]+(span/4)
+    tp2 = tps[4]+(span/4)
+    stg1 <span style="color: #BFEBBF;">&lt;-</span> getStage(tp1)
+    stg2 <span style="color: #BFEBBF;">&lt;-</span> getStage(tp2)
+    <span style="color: #F0DFAF; font-weight: bold;">return</span>(paste0(stg1,<span style="color: #CC9393;">"-"</span>,stg2))
+  }
+}
+
+
+ncombs <span style="color: #BFEBBF;">&lt;-</span> dim(combs)[2]
+
+maxValCols <span style="color: #BFEBBF;">&lt;-</span> seq(5, ncombs*6, 6)
+maxTimeCols <span style="color: #BFEBBF;">&lt;-</span> seq(6, ncombs*6, 6)
+
+aMAFC <span style="color: #BFEBBF;">&lt;-</span> cbind(allDifs[,c(maxValCols, maxTimeCols)])
+
+timeCols <span style="color: #BFEBBF;">&lt;-</span> (ncombs+1):(ncombs*2)
+
+tps <span style="color: #BFEBBF;">&lt;-</span> sapply(mybreaks, <span style="color: #F0DFAF; font-weight: bold;">function</span>(x) timetostage(x))
+
+<span style="color: #F0DFAF; font-weight: bold;">for</span> (i <span style="color: #F0DFAF; font-weight: bold;">in</span> timeCols){
+  aMAFC[,i] <span style="color: #BFEBBF;">&lt;-</span> sapply(aMAFC[,i], <span style="color: #F0DFAF; font-weight: bold;">function</span>(x) fracToStage(x, tps))
+}
+
+write.csv(allDifs, paste0(outdir, <span style="color: #CC9393;">"/areaDiferences_geneLevel.csv"</span>))
+write.csv(aMAFC, paste0(outdir, <span style="color: #CC9393;">"/aMAFC_geneLevel.csv"</span>))
+
+</pre>
+</div>
 </div>
 </li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org0132fca" class="outline-3">
-<h3 id="org0132fca"><span class="section-number-3">3.13</span> Plots</h3>
+<div id="outline-container-orga3209a2" class="outline-3">
+<h3 id="orga3209a2"><span class="section-number-3">3.13</span> Plots</h3>
 <div class="outline-text-3" id="text-3-13">
 </div>
-<div id="outline-container-orgfd535fc" class="outline-4">
-<h4 id="orgfd535fc"><span class="section-number-4">3.13.1</span> PCAs</h4>
+<div id="outline-container-org1b6c3aa" class="outline-4">
+<h4 id="org1b6c3aa"><span class="section-number-4">3.13.1</span> PCA Plots</h4>
+<div class="outline-text-4" id="text-3-13-1">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">PCA Plots ####</span>
+
+print(<span style="color: #CC9393;">"Plotting PCA.."</span>)
+noNA <span style="color: #BFEBBF;">&lt;-</span> xgene[complete.cases(exprs(xgene))]
+df <span style="color: #BFEBBF;">&lt;-</span> t(exprs(noNA))
+df <span style="color: #BFEBBF;">&lt;-</span> as.data.frame(df)
+
+pca <span style="color: #BFEBBF;">&lt;-</span> prcomp(df)
+cmp1 <span style="color: #BFEBBF;">&lt;-</span> format(round(summary(pca)$importance[2,1]*100, 2), nsmall = 2)
+cmp2 <span style="color: #BFEBBF;">&lt;-</span> format(round(summary(pca)$importance[2,2]*100, 2), nsmall = 2)
+
+df_pca <span style="color: #BFEBBF;">&lt;-</span> as.data.frame(pca$x)
+df_pca$Type <span style="color: #BFEBBF;">&lt;-</span> noNA@phenoData@data$type
+df_pca$Time <span style="color: #BFEBBF;">&lt;-</span> noNA@phenoData@data$time
+
+p <span style="color: #BFEBBF;">&lt;-</span> ggplot(df_pca, aes(x=PC1,y=PC2, col = Type, group = Type))
+p <span style="color: #BFEBBF;">&lt;-</span> p + geom_point(aes(size= Time))
+p <span style="color: #BFEBBF;">&lt;-</span> p + geom_path()
+p <span style="color: #BFEBBF;">&lt;-</span> p + scale_x_continuous(name=paste0(<span style="color: #CC9393;">"PC1: "</span>, cmp1, <span style="color: #CC9393;">"%"</span>))
+p <span style="color: #BFEBBF;">&lt;-</span> p + scale_y_continuous(name=paste0(<span style="color: #CC9393;">"PC2: "</span>, cmp2, <span style="color: #CC9393;">"%"</span>))
+
+ggsave(p, filename = paste0(figPath, <span style="color: #CC9393;">"PCA.png"</span>), device = <span style="color: #CC9393;">"png"</span>, dpi = <span style="color: #CC9393;">"retina"</span>)
+</pre>
 </div>
-<div id="outline-container-orgbc3d988" class="outline-4">
-<h4 id="orgbc3d988"><span class="section-number-4">3.13.2</span> Expression Plots</h4>
+</div>
+</div>
+<div id="outline-container-org3046dc0" class="outline-4">
+<h4 id="org3046dc0"><span class="section-number-4">3.13.2</span> Expression Plots</h4>
+<div class="outline-text-4" id="text-3-13-2">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Expression Plots ####</span>
+
+print(<span style="color: #CC9393;">"Plotting Expression Plots..."</span>)
+<span style="color: #93E0E3;">expressionPlot</span> <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #F0DFAF; font-weight: bold;">function</span>(type){
+
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Set df and lims depending on what we are plotting.</span>
+  <span style="color: #F0DFAF; font-weight: bold;">if</span> (type == <span style="color: #CC9393;">"gene"</span>){
+    df = xgene
+    path = <span style="color: #CC9393;">"/Ratio/Gene_Level/"</span>
+
+  } <span style="color: #F0DFAF; font-weight: bold;">else</span> <span style="color: #F0DFAF; font-weight: bold;">if</span> (type == <span style="color: #CC9393;">"gene_red"</span>){
+    df = xgene_red
+    path = <span style="color: #CC9393;">"/Red_Signal/Gene_Level/"</span>
+
+  } <span style="color: #F0DFAF; font-weight: bold;">else</span> <span style="color: #F0DFAF; font-weight: bold;">if</span> (type == <span style="color: #CC9393;">"probe"</span>){
+    df = xprobe
+    path = <span style="color: #CC9393;">"/Ratio/Probe_Level/"</span>
+
+  } <span style="color: #F0DFAF; font-weight: bold;">else</span> <span style="color: #F0DFAF; font-weight: bold;">if</span> (type == <span style="color: #CC9393;">"probe_red"</span>){
+    df = xprobe_red
+    path = <span style="color: #CC9393;">"/Red_Signal/Probe_Level/"</span>
+
+  }
+
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Set ylims</span>
+  ylim = c(min(exprs(df), na.rm = T), max(exprs(df), na.rm = T))
+
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Set number of plots</span>
+  <span style="color: #F0DFAF; font-weight: bold;">if</span> (run_all_plots == <span style="color: #CC9393;">"yes"</span>){
+    nplots = dim(df)[1]
+  } <span style="color: #F0DFAF; font-weight: bold;">else</span> {
+    nplots = 20
+  }
+
+  <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Main Loop</span>
+  <span style="color: #F0DFAF; font-weight: bold;">for</span> (i <span style="color: #F0DFAF; font-weight: bold;">in</span> 1:nplots){
+
+    <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Set gene for title or gene and probe for probe-level plots.</span>
+    gn <span style="color: #BFEBBF;">&lt;-</span> gsub(<span style="color: #CC9393;">"[/:;.]"</span>, <span style="color: #CC9393;">"_"</span>, fData(df)$Gene_id[i])
+    <span style="color: #F0DFAF; font-weight: bold;">if</span> (type <span style="color: #BFEBBF;">%in%</span> c(<span style="color: #CC9393;">"probe"</span>, <span style="color: #CC9393;">"probe_red"</span>)){
+      prb <span style="color: #BFEBBF;">&lt;-</span> paste0(<span style="color: #CC9393;">"_"</span>, gsub(<span style="color: #CC9393;">"[/:;.]"</span>, <span style="color: #CC9393;">"_"</span> , fData(xprobe)$ProbeName[i]))
+    } <span style="color: #F0DFAF; font-weight: bold;">else</span> {
+      prb <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #CC9393;">""</span>
+    }
+    title <span style="color: #BFEBBF;">&lt;-</span> paste0(gn, prb)
+
+    <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Plot</span>
+    graf <span style="color: #BFEBBF;">&lt;-</span> melt(df[i,])
+    graf[<span style="color: #CC9393;">"Type"</span>] <span style="color: #BFEBBF;">&lt;-</span> xgene@phenoData@data$type
+    graf[<span style="color: #CC9393;">"Time"</span>] <span style="color: #BFEBBF;">&lt;-</span> xgene@phenoData@data$time
+    p <span style="color: #BFEBBF;">&lt;-</span> ggplot(graf, aes(x = Time, y = value, col = Type, group = Type))
+    p <span style="color: #BFEBBF;">&lt;-</span> p + geom_point(aes(color = Type, shape = Type)) + geom_line()
+    p <span style="color: #BFEBBF;">&lt;-</span> p + coord_cartesian(ylim = ylim)
+    p <span style="color: #BFEBBF;">&lt;-</span> p + ggtitle(title)
+    ggsave(p, file=paste0(figPath, path, gn, prb, <span style="color: #CC9393;">".jpeg"</span>),
+           device = <span style="color: #CC9393;">"jpeg"</span>, width = 14, height = 10, units = <span style="color: #CC9393;">"cm"</span>)
+
+  }
+
+}
+
+expressionPlot(<span style="color: #CC9393;">"gene"</span>)
+expressionPlot(<span style="color: #CC9393;">"gene_red"</span>)
+expressionPlot(<span style="color: #CC9393;">"probe"</span>)
+expressionPlot(<span style="color: #CC9393;">"probe_red"</span>)
+</pre>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -624,7 +1518,7 @@ We consider the the timepoint in the middle of a partition (left,right,mid,sides
 <div id="postamble" class="status">
 <p class="date">Date: 15/06/2019</p>
 <p class="author">Author: Lucas Michel Todó</p>
-<p class="date">Created: 2020-01-21 mar 16:08</p>
+<p class="date">Created: 2020-07-09 jue 17:41</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
