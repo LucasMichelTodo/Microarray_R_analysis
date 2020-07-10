@@ -4,11 +4,10 @@
 
 ## Set directories
 
-datadir <- "/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/Raw_Data/"
-outdir <- "/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/R_results_NewTry"
-annot <- read.csv("/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/Files/array_anotation.csv",
-                  sep="\t", header = F)
-infiles <- "/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/Files/"
+datadir <- "./Raw_Data/"
+outdir <- "./R_results"
+annot <- read.csv("./Files/array_anotation.csv", sep="\t", header = F)
+infiles <- "./Files/"
 
 ## Describe Data structure ##
 
@@ -78,13 +77,6 @@ if (!("Biobase" %in% installed.packages()[,"Package"])){
   BiocManager::install()
 }
 
-if (!("org.Pf.plasmo.db" %in% installed.packages()[,"Package"])){
-  if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-  BiocManager::install("org.Pf.plasmo.db")
-}
-
-library(org.Pf.plasmo.db)
 library(Biobase)
 
 #### Create folders for output ####
@@ -108,7 +100,11 @@ figPath <- paste0(outdir, "/Plots/")
 
 print("Loading Array Annotation...")
 gene_list <- readLines(paste0(infiles, "gene_list.txt"))
-variant <- read.csv(paste0(infiles, "Gens_variants_extended.txt"), header = TRUE, sep = "\t")
+
+cvgs <- read.csv2(paste0(infiles, 'taula_CVG_final.csv'), stringsAsFactors = F)
+cvgs <- cvgs %>%
+  select(Gene_id = Gene.ID, Variant = Final.Customized) %>%
+  mutate(Variant = ifelse(Variant == 'YES', TRUE, FALSE))
 
 #### Create Probe-DF ####
 
@@ -139,11 +135,12 @@ probe_df["Annot"] <- gsub("pseudogene", "pseudo", probe_df$Annot)
 probe_df["Annot"] <- gsub("putative", "put.", probe_df$Annot)
 probe_df["Annot"] <- gsub("%2C", "", probe_df$Annot)
 
-                                        # Remove probes that map tu multiple genes.
+## Remove probes that map tu multiple genes.
 probe_df <- probe_df[annot$V3 != "drop" | is.na(annot$V3),]
 
-                                        # Add Variant Genes information
-probe_df["Variant"] <- probe_df$Gene_id %in% variant$ID
+## Add Variant Genes information
+varlist <- dplyr::filter(cvgs, Variant) %>% select(Gene_id)
+probe_df["Variant"] <- probe_df$Gene_id %in% varlist
 
 #### Group Columns ####
 
