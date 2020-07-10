@@ -1,5 +1,5 @@
 #+STARTUP: hideblocks
-#+SETUPFILE: /home/lucas/.emacs.d/org-html-themes-master/setup/theme-readtheorg.setup
+#+SETUPFILE: ~/.emacs.d/org-html-themes-master/setup/theme-readtheorg.setup
 #+OPTIONS: ^:{}
 
 #+TITLE: Readme
@@ -128,7 +128,7 @@ array_list <- list(Ctl_1,
 - ~Sample names~ /(Ctl_1, Ctl_2, ...)/ Set each sample to the same names you set in the previous part.
 - ~array_list~ Fill this list with the sample names. They must be *unquoted*. They must be in the same order you specified in ~sample_names~.
 ** Set number of plots
-   
+
 Example code:
 
 #+BEGIN_SRC R
@@ -315,7 +315,7 @@ for (i in 1:length(array_list)) {arrayPlot(array_list[[i]])}
 #+end_src
 
 *** MA Plots
-#+begin_src R 
+#+begin_src R
 #### MA Plots ####
 
 print("Plotting MA Plots...")
@@ -342,9 +342,6 @@ for (i in 1:length(array_list)) {myMAplot(array_list[[i]])}
 print("Creating Eset...")
 probe_df[,ratioCols] <- log2(10**probe_df[,ratioCols])
 #+end_src
-
-#+RESULTS[34488a954d07238ed0d8a30791b7e2d9ad74604c]:
-
 *** Change to Log2 (Raw signal Cols, originally unlogged)
 #+begin_src R
 #### Change to Log2 (Raw signal Cols, originally unlogged) ####
@@ -539,9 +536,6 @@ write.csv(xgene@phenoData@data, file = paste0(outdir, "/experiment_data.csv"))
 write.csv(cbind(xgene@featureData@data, exprs(xgene)), paste0(outdir, "/geneLevel_exp.csv"), row.names=F)
 write.csv(cbind(xgene_red@featureData@data, exprs(xgene_red)), paste0(outdir, "/geneLevel_redSignal_exp.csv"), row.names=F)
 #+end_src
-
-#+RESULTS:
-
 ** Fold Change
 *** Probe Level
 #+begin_src R
@@ -580,8 +574,6 @@ gene_fc <- cbind(fData(xgene), gene_fc)
 write.csv(gene_fc, file = paste0(outdir, "/geneLevel_FC.csv"), row.names = F)
 
 #+end_src
-
-#+RESULTS:
 
 ** Arees
 *** Functions
@@ -944,7 +936,6 @@ p <- p + scale_y_continuous(name=paste0("PC2: ", cmp2, "%"))
 
 ggsave(p, filename = paste0(figPath, "PCA.png"), device = "png", dpi = "retina")
 #+end_src
-
 #+RESULTS:
 *** Expression Plots
 #+begin_src R
