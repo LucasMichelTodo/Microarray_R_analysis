@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-07-10 Fri 11:35 -->
+<!-- 2020-07-10 Fri 12:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Readme</title>
@@ -243,56 +243,56 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org69771af">1. Introduction</a></li>
-<li><a href="#org3c1a57b">2. Script: Modifiable Parts</a>
+<li><a href="#orgc82664b">1. Introduction</a></li>
+<li><a href="#org24eee68">2. Script: Modifiable Parts</a>
 <ul>
-<li><a href="#org7ad1324">2.1. Set directories</a></li>
-<li><a href="#org1f674f8">2.2. Describe Data structure</a></li>
-<li><a href="#org194dab4">2.3. Load Raw_Data</a></li>
-<li><a href="#org5d71275">2.4. Set number of plots</a></li>
+<li><a href="#org23c407c">2.1. Set directories</a></li>
+<li><a href="#org97531ba">2.2. Describe Data structure</a></li>
+<li><a href="#org51c936f">2.3. Load Raw_Data</a></li>
+<li><a href="#orgb7c835e">2.4. Set number of plots</a></li>
 </ul>
 </li>
-<li><a href="#orgdbb0094">3. Script: Data Analysis</a>
+<li><a href="#org54c1d1e">3. Script: Data Analysis</a>
 <ul>
-<li><a href="#orga663342">3.1. Import libraries</a></li>
-<li><a href="#org9bf71bd">3.2. Create folders for output</a></li>
-<li><a href="#org52fa7b3">3.3. Load Array annotation, Gene-list and Variant Genes.</a></li>
-<li><a href="#org07578a6">3.4. Create Probe-DF</a></li>
-<li><a href="#org9816b2e">3.5. Group Columns</a></li>
-<li><a href="#org59e5188">3.6. Remove low expression probes</a></li>
-<li><a href="#orge725605">3.7. Arrays QC</a>
+<li><a href="#orgaef0f05">3.1. Import libraries</a></li>
+<li><a href="#org0270948">3.2. Create folders for output</a></li>
+<li><a href="#org0361162">3.3. Load Array annotation, Gene-list and Variant Genes.</a></li>
+<li><a href="#orge81c170">3.4. Create Probe-DF</a></li>
+<li><a href="#org777071e">3.5. Group Columns</a></li>
+<li><a href="#orgc38dbb0">3.6. Remove low expression probes</a></li>
+<li><a href="#orgc59296f">3.7. Arrays QC</a>
 <ul>
-<li><a href="#orgb959945">3.7.1. Array Plots</a></li>
-<li><a href="#orge28a9d9">3.7.2. MA Plots</a></li>
+<li><a href="#org206c466">3.7.1. Array Plots</a></li>
+<li><a href="#orgfce8f48">3.7.2. MA Plots</a></li>
 </ul>
 </li>
-<li><a href="#org287b86d">3.8. Eset creation</a>
+<li><a href="#org028d047">3.8. Eset creation</a>
 <ul>
-<li><a href="#orgb1ee11b">3.8.1. Change to Log2 (Log Ratio cols, originally log10)</a></li>
-<li><a href="#orgfe086e5">3.8.2. Change to Log2 (Raw signal Cols, originally unlogged)</a></li>
-<li><a href="#org104f522">3.8.3. Create eSet: xprobe</a></li>
-<li><a href="#orgbc0a036">3.8.4. Rename and Summarize</a></li>
+<li><a href="#org6009c3d">3.8.1. Change to Log2 (Log Ratio cols, originally log10)</a></li>
+<li><a href="#org89f2a58">3.8.2. Change to Log2 (Raw signal Cols, originally unlogged)</a></li>
+<li><a href="#org213c3c9">3.8.3. Create eSet: xprobe</a></li>
+<li><a href="#org194d6b4">3.8.4. Rename and Summarize</a></li>
 </ul>
 </li>
-<li><a href="#org56abf5d">3.9. Estimate times</a></li>
-<li><a href="#orgada8321">3.10. Save results in CSVs</a></li>
-<li><a href="#org2babd9b">3.11. Fold Change</a>
+<li><a href="#org0447633">3.9. Estimate times</a></li>
+<li><a href="#orgb752650">3.10. Save results in CSVs</a></li>
+<li><a href="#org5552661">3.11. Fold Change</a>
 <ul>
-<li><a href="#org109689c">3.11.1. Probe Level</a></li>
-<li><a href="#org0004c88">3.11.2. Gene Level</a></li>
+<li><a href="#org7d233ba">3.11.1. Probe Level</a></li>
+<li><a href="#orgc6f0b3d">3.11.2. Gene Level</a></li>
 </ul>
 </li>
-<li><a href="#org7bc4f8c">3.12. Arees</a>
+<li><a href="#org0e4057d">3.12. Arees</a>
 <ul>
-<li><a href="#orgffd2a1e">3.12.1. Functions</a></li>
-<li><a href="#orga92f08d">3.12.2. Calls: Compute Areas</a></li>
-<li><a href="#org538b9dc">3.12.3. Calculate aAFC (average Area Fold-Change)</a></li>
+<li><a href="#org5d95422">3.12.1. Functions</a></li>
+<li><a href="#org0d7a179">3.12.2. Calls: Compute Areas</a></li>
+<li><a href="#org467ac39">3.12.3. Calculate aAFC (average Area Fold-Change)</a></li>
 </ul>
 </li>
-<li><a href="#org93c8db0">3.13. Plots</a>
+<li><a href="#org6fbde71">3.13. Plots</a>
 <ul>
-<li><a href="#org080329c">3.13.1. PCA Plots</a></li>
-<li><a href="#orgc33be61">3.13.2. Expression Plots</a></li>
+<li><a href="#org03117c9">3.13.1. PCA Plots</a></li>
+<li><a href="#org15d277c">3.13.2. Expression Plots</a></li>
 </ul>
 </li>
 </ul>
@@ -301,8 +301,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org69771af" class="outline-2">
-<h2 id="org69771af"><span class="section-number-2">1</span> Introduction</h2>
+<div id="outline-container-orgc82664b" class="outline-2">
+<h2 id="orgc82664b"><span class="section-number-2">1</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 This folder contains everything you need to run a preliminary analysis on your micro-array data.
@@ -337,8 +337,8 @@ To run the analysis you just have to modify <code>microarrray_analysis.R</code> 
 </div>
 </div>
 
-<div id="outline-container-org3c1a57b" class="outline-2">
-<h2 id="org3c1a57b"><span class="section-number-2">2</span> Script: Modifiable Parts</h2>
+<div id="outline-container-org24eee68" class="outline-2">
+<h2 id="org24eee68"><span class="section-number-2">2</span> Script: Modifiable Parts</h2>
 <div class="outline-text-2" id="text-2">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">############## </span><span style="color: #7F9F7F;">Experiment Setup: MODIFY THIS PART #######################</span>
@@ -350,8 +350,8 @@ To run the analysis you just have to modify <code>microarrray_analysis.R</code> 
 The only part of code that must be modified are the ones depicted here. They correspond to the begining of the script.
 </p>
 </div>
-<div id="outline-container-org7ad1324" class="outline-3">
-<h3 id="org7ad1324"><span class="section-number-3">2.1</span> Set directories</h3>
+<div id="outline-container-org23c407c" class="outline-3">
+<h3 id="org23c407c"><span class="section-number-3">2.1</span> Set directories</h3>
 <div class="outline-text-3" id="text-2-1">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Set directories</span>
@@ -372,8 +372,8 @@ infiles <span style="color: #BFEBBF;">&lt;-</span> <span style="color: #CC9393;"
 </div>
 </div>
 
-<div id="outline-container-org1f674f8" class="outline-3">
-<h3 id="org1f674f8"><span class="section-number-3">2.2</span> Describe Data structure</h3>
+<div id="outline-container-org97531ba" class="outline-3">
+<h3 id="org97531ba"><span class="section-number-3">2.2</span> Describe Data structure</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Example code:
@@ -413,8 +413,8 @@ In this part you have to modify the following variables:
 </ul>
 </div>
 </div>
-<div id="outline-container-org194dab4" class="outline-3">
-<h3 id="org194dab4"><span class="section-number-3">2.3</span> Load Raw_Data</h3>
+<div id="outline-container-org51c936f" class="outline-3">
+<h3 id="org51c936f"><span class="section-number-3">2.3</span> Load Raw_Data</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 In this part of the script we define the computer folder in which we will be working and load the raw array data.
@@ -460,8 +460,8 @@ array_list <span style="color: #BFEBBF;">&lt;-</span> list(Ctl_1,
 </ul>
 </div>
 </div>
-<div id="outline-container-org5d71275" class="outline-3">
-<h3 id="org5d71275"><span class="section-number-3">2.4</span> Set number of plots</h3>
+<div id="outline-container-orgb7c835e" class="outline-3">
+<h3 id="orgb7c835e"><span class="section-number-3">2.4</span> Set number of plots</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Example code:
@@ -491,15 +491,15 @@ Thats all! You are now set to run the analysis. Just start an R session, run the
 </div>
 </div>
 </div>
-<div id="outline-container-orgdbb0094" class="outline-2">
-<h2 id="orgdbb0094"><span class="section-number-2">3</span> Script: Data Analysis</h2>
+<div id="outline-container-org54c1d1e" class="outline-2">
+<h2 id="org54c1d1e"><span class="section-number-2">3</span> Script: Data Analysis</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 This is the part of the script that runs the analysis. You do not have to modifiy anything from here on, but if you are curious here is the code!
 </p>
 </div>
-<div id="outline-container-orga663342" class="outline-3">
-<h3 id="orga663342"><span class="section-number-3">3.1</span> Import libraries</h3>
+<div id="outline-container-orgaef0f05" class="outline-3">
+<h3 id="orgaef0f05"><span class="section-number-3">3.1</span> Import libraries</h3>
 <div class="outline-text-3" id="text-3-1">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Import libraries ####</span>
@@ -527,8 +527,8 @@ new.packages <span style="color: #BFEBBF;">&lt;-</span> list.of.packages[!(list.
 </div>
 </div>
 
-<div id="outline-container-org9bf71bd" class="outline-3">
-<h3 id="org9bf71bd"><span class="section-number-3">3.2</span> Create folders for output</h3>
+<div id="outline-container-org0270948" class="outline-3">
+<h3 id="org0270948"><span class="section-number-3">3.2</span> Create folders for output</h3>
 <div class="outline-text-3" id="text-3-2">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Create folders for output ####</span>
@@ -553,8 +553,8 @@ figPath <span style="color: #BFEBBF;">&lt;-</span> paste0(outdir, <span style="c
 </div>
 </div>
 
-<div id="outline-container-org52fa7b3" class="outline-3">
-<h3 id="org52fa7b3"><span class="section-number-3">3.3</span> Load Array annotation, Gene-list and Variant Genes.</h3>
+<div id="outline-container-org0361162" class="outline-3">
+<h3 id="org0361162"><span class="section-number-3">3.3</span> Load Array annotation, Gene-list and Variant Genes.</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 Load <code>array_anotation.csv</code> a table with the array annotation.
@@ -577,8 +577,8 @@ cvgs <span style="color: #BFEBBF;">&lt;-</span> cvgs <span style="color: #BFEBBF
 </div>
 </div>
 
-<div id="outline-container-org07578a6" class="outline-3">
-<h3 id="org07578a6"><span class="section-number-3">3.4</span> Create Probe-DF</h3>
+<div id="outline-container-orge81c170" class="outline-3">
+<h3 id="orge81c170"><span class="section-number-3">3.4</span> Create Probe-DF</h3>
 <div class="outline-text-3" id="text-3-4">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Create Probe-DF ####</span>
@@ -621,8 +621,8 @@ probe_df[<span style="color: #CC9393;">"Variant"</span>] <span style="color: #BF
 </div>
 </div>
 
-<div id="outline-container-org9816b2e" class="outline-3">
-<h3 id="org9816b2e"><span class="section-number-3">3.5</span> Group Columns</h3>
+<div id="outline-container-org777071e" class="outline-3">
+<h3 id="org777071e"><span class="section-number-3">3.5</span> Group Columns</h3>
 <div class="outline-text-3" id="text-3-5">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Group Columns ####</span>
@@ -639,8 +639,8 @@ infoCols <span style="color: #BFEBBF;">&lt;-</span> c(1, (signalCols+1):allcols)
 </div>
 </div>
 </div>
-<div id="outline-container-org59e5188" class="outline-3">
-<h3 id="org59e5188"><span class="section-number-3">3.6</span> Remove low expression probes</h3>
+<div id="outline-container-orgc38dbb0" class="outline-3">
+<h3 id="orgc38dbb0"><span class="section-number-3">3.6</span> Remove low expression probes</h3>
 <div class="outline-text-3" id="text-3-6">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Remove low expression probes ####</span>
@@ -669,12 +669,12 @@ probe_df[!pass,c(ratioCols)] <span style="color: #BFEBBF;">&lt;-</span> <span st
 </div>
 </div>
 </div>
-<div id="outline-container-orge725605" class="outline-3">
-<h3 id="orge725605"><span class="section-number-3">3.7</span> Arrays QC</h3>
+<div id="outline-container-orgc59296f" class="outline-3">
+<h3 id="orgc59296f"><span class="section-number-3">3.7</span> Arrays QC</h3>
 <div class="outline-text-3" id="text-3-7">
 </div>
-<div id="outline-container-orgb959945" class="outline-4">
-<h4 id="orgb959945"><span class="section-number-4">3.7.1</span> Array Plots</h4>
+<div id="outline-container-org206c466" class="outline-4">
+<h4 id="org206c466"><span class="section-number-4">3.7.1</span> Array Plots</h4>
 <div class="outline-text-4" id="text-3-7-1">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Array Plots ####</span>
@@ -700,8 +700,8 @@ cols <span style="color: #BFEBBF;">&lt;-</span> rev(brewer.pal(11, <span style="
 </div>
 </div>
 
-<div id="outline-container-orge28a9d9" class="outline-4">
-<h4 id="orge28a9d9"><span class="section-number-4">3.7.2</span> MA Plots</h4>
+<div id="outline-container-orgfce8f48" class="outline-4">
+<h4 id="orgfce8f48"><span class="section-number-4">3.7.2</span> MA Plots</h4>
 <div class="outline-text-4" id="text-3-7-2">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">MA Plots ####</span>
@@ -726,12 +726,12 @@ print(<span style="color: #CC9393;">"Plotting MA Plots..."</span>)
 </div>
 </div>
 
-<div id="outline-container-org287b86d" class="outline-3">
-<h3 id="org287b86d"><span class="section-number-3">3.8</span> Eset creation</h3>
+<div id="outline-container-org028d047" class="outline-3">
+<h3 id="org028d047"><span class="section-number-3">3.8</span> Eset creation</h3>
 <div class="outline-text-3" id="text-3-8">
 </div>
-<div id="outline-container-orgb1ee11b" class="outline-4">
-<h4 id="orgb1ee11b"><span class="section-number-4">3.8.1</span> Change to Log2 (Log Ratio cols, originally log10)</h4>
+<div id="outline-container-org6009c3d" class="outline-4">
+<h4 id="org6009c3d"><span class="section-number-4">3.8.1</span> Change to Log2 (Log Ratio cols, originally log10)</h4>
 <div class="outline-text-4" id="text-3-8-1">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Change to Log2 (Log Ratio cols, originally log10) ####</span>
@@ -742,8 +742,8 @@ probe_df[,ratioCols] <span style="color: #BFEBBF;">&lt;-</span> log2(10**probe_d
 </div>
 </div>
 </div>
-<div id="outline-container-orgfe086e5" class="outline-4">
-<h4 id="orgfe086e5"><span class="section-number-4">3.8.2</span> Change to Log2 (Raw signal Cols, originally unlogged)</h4>
+<div id="outline-container-org89f2a58" class="outline-4">
+<h4 id="org89f2a58"><span class="section-number-4">3.8.2</span> Change to Log2 (Raw signal Cols, originally unlogged)</h4>
 <div class="outline-text-4" id="text-3-8-2">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Change to Log2 (Raw signal Cols, originally unlogged) ####</span>
@@ -754,8 +754,8 @@ probe_df[,redCols]  <span style="color: #BFEBBF;">&lt;-</span> log2(probe_df[,re
 </div>
 </div>
 
-<div id="outline-container-org104f522" class="outline-4">
-<h4 id="org104f522"><span class="section-number-4">3.8.3</span> Create eSet: xprobe</h4>
+<div id="outline-container-org213c3c9" class="outline-4">
+<h4 id="org213c3c9"><span class="section-number-4">3.8.3</span> Create eSet: xprobe</h4>
 <div class="outline-text-4" id="text-3-8-3">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Create eSet: xprobe ####</span>
@@ -781,8 +781,8 @@ write.csv(cbind(fdata@data, exprs(xprobe_red)), paste0(outdir, <span style="colo
 </div>
 </div>
 
-<div id="outline-container-orgbc0a036" class="outline-4">
-<h4 id="orgbc0a036"><span class="section-number-4">3.8.4</span> Rename and Summarize</h4>
+<div id="outline-container-org194d6b4" class="outline-4">
+<h4 id="org194d6b4"><span class="section-number-4">3.8.4</span> Rename and Summarize</h4>
 <div class="outline-text-4" id="text-3-8-4">
 <p>
 Summarize all probes for a same gene, using median polish.
@@ -848,8 +848,8 @@ xgene_red <span style="color: #BFEBBF;">&lt;-</span> tmp2[[<span style="color: #
 </div>
 </div>
 
-<div id="outline-container-org56abf5d" class="outline-3">
-<h3 id="org56abf5d"><span class="section-number-3">3.9</span> Estimate times</h3>
+<div id="outline-container-org0447633" class="outline-3">
+<h3 id="org0447633"><span class="section-number-3">3.9</span> Estimate times</h3>
 <div class="outline-text-3" id="text-3-9">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Estimate times ####</span>
@@ -951,8 +951,8 @@ dev.off()
 </div>
 </div>
 
-<div id="outline-container-orgada8321" class="outline-3">
-<h3 id="orgada8321"><span class="section-number-3">3.10</span> Save results in CSVs</h3>
+<div id="outline-container-orgb752650" class="outline-3">
+<h3 id="orgb752650"><span class="section-number-3">3.10</span> Save results in CSVs</h3>
 <div class="outline-text-3" id="text-3-10">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Save results in CSVs ####</span>
@@ -964,12 +964,12 @@ write.csv(cbind(xgene_red@featureData@data, exprs(xgene_red)), paste0(outdir, <s
 </div>
 </div>
 </div>
-<div id="outline-container-org2babd9b" class="outline-3">
-<h3 id="org2babd9b"><span class="section-number-3">3.11</span> Fold Change</h3>
+<div id="outline-container-org5552661" class="outline-3">
+<h3 id="org5552661"><span class="section-number-3">3.11</span> Fold Change</h3>
 <div class="outline-text-3" id="text-3-11">
 </div>
-<div id="outline-container-org109689c" class="outline-4">
-<h4 id="org109689c"><span class="section-number-4">3.11.1</span> Probe Level</h4>
+<div id="outline-container-org7d233ba" class="outline-4">
+<h4 id="org7d233ba"><span class="section-number-4">3.11.1</span> Probe Level</h4>
 <div class="outline-text-4" id="text-3-11-1">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">FC: Probe Level ####</span>
@@ -992,8 +992,8 @@ write.csv(probe_fc, file = paste0(outdir, <span style="color: #CC9393;">"/proveL
 </div>
 </div>
 
-<div id="outline-container-org0004c88" class="outline-4">
-<h4 id="org0004c88"><span class="section-number-4">3.11.2</span> Gene Level</h4>
+<div id="outline-container-orgc6f0b3d" class="outline-4">
+<h4 id="orgc6f0b3d"><span class="section-number-4">3.11.2</span> Gene Level</h4>
 <div class="outline-text-4" id="text-3-11-2">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">FC: Gene Level ####</span>
@@ -1017,12 +1017,12 @@ write.csv(gene_fc, file = paste0(outdir, <span style="color: #CC9393;">"/geneLev
 </div>
 </div>
 
-<div id="outline-container-org7bc4f8c" class="outline-3">
-<h3 id="org7bc4f8c"><span class="section-number-3">3.12</span> Arees</h3>
+<div id="outline-container-org0e4057d" class="outline-3">
+<h3 id="org0e4057d"><span class="section-number-3">3.12</span> Arees</h3>
 <div class="outline-text-3" id="text-3-12">
 </div>
-<div id="outline-container-orgffd2a1e" class="outline-4">
-<h4 id="orgffd2a1e"><span class="section-number-4">3.12.1</span> Functions</h4>
+<div id="outline-container-org5d95422" class="outline-4">
+<h4 id="org5d95422"><span class="section-number-4">3.12.1</span> Functions</h4>
 <div class="outline-text-4" id="text-3-12-1">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Areas: Functions ####</span>
@@ -1196,8 +1196,8 @@ write.csv(gene_fc, file = paste0(outdir, <span style="color: #CC9393;">"/geneLev
 </div>
 </div>
 </div>
-<div id="outline-container-orga92f08d" class="outline-4">
-<h4 id="orga92f08d"><span class="section-number-4">3.12.2</span> Calls: Compute Areas</h4>
+<div id="outline-container-org0d7a179" class="outline-4">
+<h4 id="org0d7a179"><span class="section-number-4">3.12.2</span> Calls: Compute Areas</h4>
 <div class="outline-text-4" id="text-3-12-2">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Calls: Compute Areas ####</span>
@@ -1211,12 +1211,12 @@ write.csv(xout, paste0(outdir, <span style="color: #CC9393;">"/area_geneLevel.cs
 </div>
 </div>
 </div>
-<div id="outline-container-org538b9dc" class="outline-4">
-<h4 id="org538b9dc"><span class="section-number-4">3.12.3</span> Calculate aAFC (average Area Fold-Change)</h4>
+<div id="outline-container-org467ac39" class="outline-4">
+<h4 id="org467ac39"><span class="section-number-4">3.12.3</span> Calculate aAFC (average Area Fold-Change)</h4>
 <div class="outline-text-4" id="text-3-12-3">
 </div>
 <ol class="org-ol">
-<li><a id="orgfacbe6c"></a>Custom Max<br />
+<li><a id="orgeb47615"></a>Custom Max<br />
 <div class="outline-text-5" id="text-3-12-3-1">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Calculate aAFC (average Area Fold-Change) ####</span>
@@ -1236,7 +1236,7 @@ write.csv(xout, paste0(outdir, <span style="color: #CC9393;">"/area_geneLevel.cs
 </div>
 </div>
 </li>
-<li><a id="orgda46d96"></a>Calculate Differences and Max<br />
+<li><a id="orgb8a461f"></a>Calculate Differences and Max<br />
 <div class="outline-text-5" id="text-3-12-3-2">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Get number of categories.</span>
@@ -1317,7 +1317,7 @@ head(allDifs)
 </div>
 </div>
 </li>
-<li><a id="org58b9950"></a>Convert Partitions into life stages<br />
+<li><a id="org45f3f51"></a>Convert Partitions into life stages<br />
 <div class="outline-text-5" id="text-3-12-3-3">
 <p>
 We consider the the timepoint in the middle of a partition (left,right,mid,sides) as it's timepoint.
@@ -1386,12 +1386,12 @@ write.csv(aMAFC, paste0(outdir, <span style="color: #CC9393;">"/aMAFC_geneLevel.
 </ol>
 </div>
 </div>
-<div id="outline-container-org93c8db0" class="outline-3">
-<h3 id="org93c8db0"><span class="section-number-3">3.13</span> Plots</h3>
+<div id="outline-container-org6fbde71" class="outline-3">
+<h3 id="org6fbde71"><span class="section-number-3">3.13</span> Plots</h3>
 <div class="outline-text-3" id="text-3-13">
 </div>
-<div id="outline-container-org080329c" class="outline-4">
-<h4 id="org080329c"><span class="section-number-4">3.13.1</span> PCA Plots</h4>
+<div id="outline-container-org03117c9" class="outline-4">
+<h4 id="org03117c9"><span class="section-number-4">3.13.1</span> PCA Plots</h4>
 <div class="outline-text-4" id="text-3-13-1">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">PCA Plots ####</span>
@@ -1420,8 +1420,8 @@ ggsave(p, filename = paste0(figPath, <span style="color: #CC9393;">"PCA.png"</sp
 </div>
 </div>
 </div>
-<div id="outline-container-orgc33be61" class="outline-4">
-<h4 id="orgc33be61"><span class="section-number-4">3.13.2</span> Expression Plots</h4>
+<div id="outline-container-org15d277c" class="outline-4">
+<h4 id="org15d277c"><span class="section-number-4">3.13.2</span> Expression Plots</h4>
 <div class="outline-text-4" id="text-3-13-2">
 <div class="org-src-container">
 <pre class="src src-R"><span style="color: #5F7F5F;">#### </span><span style="color: #7F9F7F;">Expression Plots ####</span>
@@ -1470,6 +1470,9 @@ print(<span style="color: #CC9393;">"Plotting Expression Plots..."</span>)
     }
     title <span style="color: #BFEBBF;">&lt;-</span> paste0(gn, prb)
 
+    <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Set y-axis title depending on ratio/red_signal</span>
+    ytitle <span style="color: #BFEBBF;">&lt;-</span> ifelse(type <span style="color: #BFEBBF;">%in%</span> c(<span style="color: #CC9393;">"gene_red"</span>, <span style="color: #CC9393;">"probe_red"</span>), <span style="color: #CC9393;">'log2(Cy5)'</span>, <span style="color: #CC9393;">'log2(Cy3/Cy5)'</span>)
+
     <span style="color: #5F7F5F;">## </span><span style="color: #7F9F7F;">Plot</span>
     graf <span style="color: #BFEBBF;">&lt;-</span> melt(df[i,])
     graf[<span style="color: #CC9393;">"Type"</span>] <span style="color: #BFEBBF;">&lt;-</span> xgene@phenoData@data$type
@@ -1478,6 +1481,7 @@ print(<span style="color: #CC9393;">"Plotting Expression Plots..."</span>)
     p <span style="color: #BFEBBF;">&lt;-</span> p + geom_point(aes(color = Type, shape = Type)) + geom_line()
     p <span style="color: #BFEBBF;">&lt;-</span> p + coord_cartesian(ylim = ylim)
     p <span style="color: #BFEBBF;">&lt;-</span> p + ggtitle(title)
+    p <span style="color: #BFEBBF;">&lt;-</span> p + ylab(ytitle)
     ggsave(p, file=paste0(figPath, path, gn, prb, <span style="color: #CC9393;">".jpeg"</span>),
            device = <span style="color: #CC9393;">"jpeg"</span>, width = 14, height = 10, units = <span style="color: #CC9393;">"cm"</span>)
 
@@ -1499,7 +1503,7 @@ expressionPlot(<span style="color: #CC9393;">"probe_red"</span>)
 <div id="postamble" class="status">
 <p class="date">Date: 15/06/2019</p>
 <p class="author">Author: Lucas Michel Todó</p>
-<p class="date">Created: 2020-07-10 Fri 11:35</p>
+<p class="date">Created: 2020-07-10 Fri 12:21</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

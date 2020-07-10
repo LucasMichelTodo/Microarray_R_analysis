@@ -814,6 +814,9 @@ expressionPlot <- function(type){
     }
     title <- paste0(gn, prb)
 
+    ## Set y-axis title depending on ratio/red_signal
+    ytitle <- ifelse(type %in% c("gene_red", "probe_red"), 'log2(Cy5)', 'log2(Cy3/Cy5)')
+
     ## Plot
     graf <- melt(df[i,])
     graf["Type"] <- xgene@phenoData@data$type
@@ -822,6 +825,7 @@ expressionPlot <- function(type){
     p <- p + geom_point(aes(color = Type, shape = Type)) + geom_line()
     p <- p + coord_cartesian(ylim = ylim)
     p <- p + ggtitle(title)
+    p <- p + ylab(ytitle)
     ggsave(p, file=paste0(figPath, path, gn, prb, ".jpeg"),
            device = "jpeg", width = 14, height = 10, units = "cm")
 
