@@ -37,7 +37,7 @@ To run the analysis you just have to modify ~microarrray_analysis.R~ as explaine
 
 * Script: Modifiable Parts
 :PROPERTIES:
-:header-args:R: :session R1 :tangle microarray_analysis.R :comments none :results none :colnames yes :eval never
+:header-args:R: :session R1 :tangle microarray_analysis.R :comments none :results none :colnames yes :eval never-export
 :END:
 
 #+begin_src R :export none
@@ -50,11 +50,10 @@ The only part of code that must be modified are the ones depicted here. They cor
 #+begin_src R
 ## Set directories
 
-datadir <- "/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/Raw_Data/"
-outdir <- "/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/R_results_NewTry"
-annot <- read.csv("/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/Files/array_anotation.csv",
-                  sep="\t", header = F)
-infiles <- "/media/lucas/Disc4T/Projects/Miniprojects/Microarray_R_analysis/Files/"
+datadir <- "./Raw_Data/"
+outdir <- "./R_results"
+annot <- read.csv("./Files/array_anotation.csv", sep="\t", header = F)
+infiles <- "./Files/"
 #+end_src
 
 - ~datadir~ Set to the path of the folder where the raw-data is. (remember that in windows "\" must be replaced by "/").
@@ -129,7 +128,7 @@ array_list <- list(Ctl_1,
 - ~Sample names~ /(Ctl_1, Ctl_2, ...)/ Set each sample to the same names you set in the previous part.
 - ~array_list~ Fill this list with the sample names. They must be *unquoted*. They must be in the same order you specified in ~sample_names~.
 ** Set number of plots
-
+   
 Example code:
 
 #+BEGIN_SRC R
@@ -149,7 +148,7 @@ Thats all! You are now set to run the analysis. Just start an R session, run the
 #+end_src
 * Script: Data Analysis
 :PROPERTIES:
-:header-args:R: :session R1 :tangle microarray_analysis.R :results none :eval never
+:header-args:R: :session R1 :tangle microarray_analysis.R :results none :eval never-export
 :END:
 
 This is the part of the script that runs the analysis. You do not have to modifiy anything from here on, but if you are curious here is the code!
@@ -174,13 +173,6 @@ if (!("Biobase" %in% installed.packages()[,"Package"])){
   BiocManager::install()
 }
 
-if (!("org.Pf.plasmo.db" %in% installed.packages()[,"Package"])){
-  if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-  BiocManager::install("org.Pf.plasmo.db")
-}
-
-library(org.Pf.plasmo.db)
 library(Biobase)
 #+end_src
 
@@ -215,7 +207,11 @@ for excluding low expressed genes.
 
 print("Loading Array Annotation...")
 gene_list <- readLines(paste0(infiles, "gene_list.txt"))
-variant <- read.csv(paste0(infiles, "Gens_variants_extended.txt"), header = TRUE, sep = "\t")
+
+cvgs <- read.csv2(paste0(infiles, 'taula_CVG_final.csv'), stringsAsFactors = F)
+cvgs <- cvgs %>%
+  select(Gene_id = Gene.ID, Variant = Final.Customized) %>%
+  mutate(Variant = ifelse(Variant == 'YES', TRUE, FALSE))
 #+end_src
 
 ** Create Probe-DF
@@ -249,12 +245,12 @@ probe_df["Annot"] <- gsub("pseudogene", "pseudo", probe_df$Annot)
 probe_df["Annot"] <- gsub("putative", "put.", probe_df$Annot)
 probe_df["Annot"] <- gsub("%2C", "", probe_df$Annot)
 
-                                        # Remove probes that map tu multiple genes.
+## Remove probes that map tu multiple genes.
 probe_df <- probe_df[annot$V3 != "drop" | is.na(annot$V3),]
 
-                                        # Add Variant Genes information
-probe_df["Variant"] <- probe_df$Gene_id %in% variant$ID
-
+## Add Variant Genes information
+varlist <- dplyr::filter(cvgs, Variant) %>% select(Gene_id)
+probe_df["Variant"] <- probe_df$Gene_id %in% varlist
 #+end_src
 
 ** Group Columns
@@ -297,7 +293,7 @@ probe_df[!pass,c(ratioCols)] <- NA
 #+end_src
 ** Arrays QC
 *** Array Plots
-#+begin_src R :eval no
+#+begin_src R
 #### Array Plots ####
 
 print("Plotting Arrays...")
@@ -319,7 +315,7 @@ for (i in 1:length(array_list)) {arrayPlot(array_list[[i]])}
 #+end_src
 
 *** MA Plots
-#+begin_src R :eval no
+#+begin_src R 
 #### MA Plots ####
 
 print("Plotting MA Plots...")
